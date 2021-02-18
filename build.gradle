@@ -28,4 +28,7 @@ dependencies {
   interlokJavadocs group: "com.adaptris", name: "interlok-csv-json", version: "$interlokVersion", classifier: "javadoc", changing: true, transitive: false
   interlokJavadocs group: "com.adaptris", name: "interlok-service-tester", version: "$interlokVersion", classifier: "javadoc", changing: true, transitive: false
 
+  interlokRuntime ("org.apache.derby:derby:10.15.2.0") { changing=true }
+  interlokRuntime ("org.apache.derby:derbyshared:10.15.2.0") { changing=true }
+  interlokRuntime ("org.apache.derby:derbytools:10.15.2.0") { changing=true }
 }

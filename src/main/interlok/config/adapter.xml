@@ -10,6 +10,11 @@
         <server-connector-properties/>
         <http-configuration/>
       </jetty-http-connection>
+      <jdbc-connection>
+        <unique-id>derby-db-conn</unique-id>
+        <driver-imp>org.apache.derby.jdbc.EmbeddedDriver</driver-imp>
+        <connect-url>jdbc:derby:testdb;create=true</connect-url>
+      </jdbc-connection>
     </connections>
     <services/>
   </shared-components>
@@ -307,6 +312,188 @@
         </standard-workflow>
       </workflow-list>
       <unique-id>json-to-csv-api</unique-id>
+    </channel>
+    <channel>
+      <consume-connection class="shared-connection">
+        <lookup-name>jetty-conn</lookup-name>
+      </consume-connection>
+      <produce-connection class="null-connection">
+        <unique-id>null-conn</unique-id>
+      </produce-connection>
+      <workflow-list>
+        <standard-workflow>
+          <consumer class="jetty-message-consumer">
+            <unique-id>csv-db-init</unique-id>
+            <additional-debug>true</additional-debug>
+            <path>/csv-db-init</path>
+            <methods>GET</methods>
+            <parameter-handler class="jetty-http-ignore-parameters"/>
+            <header-handler class="jetty-http-ignore-headers"/>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>jovial-meninsky</unique-id>
+            <services>
+              <jdbc-raw-data-capture-service>
+                <unique-id>create-tickets-table</unique-id>
+                <connection class="shared-connection">
+                  <lookup-name>derby-db-conn</lookup-name>
+                </connection>
+                <parameter-applicator class="sequential-parameter-applicator"/>
+                <statement>CREATE TABLE TICKETS (
+    ID INTEGER GENERATED ALWAYS AS IDENTITY,
+    PRIORITY VARCHAR(20),
+    ISSUE_TYPE VARCHAR(20),
+    ISSUE_KEY VARCHAR(20),
+    SUMMARY VARCHAR(255),
+    STATUS VARCHAR(10),
+    &quot;CREATED&quot; TIMESTAMP NOT NULL,
+	&quot;UPDATED&quot; TIMESTAMP NOT NULL,    
+    CREATOR VARCHAR(50)
+    )</statement>
+              </jdbc-raw-data-capture-service>
+              <payload-from-template>
+                <unique-id>set-payload</unique-id>
+                <metadata-tokens/>
+                <template><![CDATA[Success - Database initialised]]></template>
+              </payload-from-template>
+            </services>
+          </service-collection>
+          <producer class="jetty-standard-response-producer">
+            <unique-id>return-result</unique-id>
+            <status-provider class="http-configured-status">
+              <status>OK_200</status>
+            </status-provider>
+            <response-header-provider class="jetty-no-response-headers"/>
+            <content-type-provider class="http-configured-content-type-provider">
+              <mime-type>text/xml</mime-type>
+            </content-type-provider>
+            <send-payload>true</send-payload>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>csv-db-init</unique-id>
+        </standard-workflow>
+        <standard-workflow>
+          <consumer class="jetty-message-consumer">
+            <unique-id>csv-db-insert</unique-id>
+            <additional-debug>true</additional-debug>
+            <path>/csv-db-insert</path>
+            <methods>POST</methods>
+            <parameter-handler class="jetty-http-ignore-parameters"/>
+            <header-handler class="jetty-http-ignore-headers"/>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>jovial-meninsky</unique-id>
+            <services>
+              <csv-jdbc-batch-insert>
+                <unique-id>csv-insert</unique-id>
+                <connection class="shared-connection">
+                  <lookup-name>derby-db-conn</lookup-name>
+                </connection>
+                <table>TICKETS</table>
+                <preference-builder class="csv-basic-preference-builder">
+                  <style>STANDARD_PREFERENCE</style>
+                </preference-builder>
+              </csv-jdbc-batch-insert>
+            </services>
+          </service-collection>
+          <producer class="jetty-standard-response-producer">
+            <unique-id>return-result</unique-id>
+            <status-provider class="http-configured-status">
+              <status>OK_200</status>
+            </status-provider>
+            <response-header-provider class="jetty-no-response-headers"/>
+            <content-type-provider class="http-configured-content-type-provider">
+              <mime-type>text/xml</mime-type>
+            </content-type-provider>
+            <send-payload>true</send-payload>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>csv-db-insert</unique-id>
+        </standard-workflow>
+        <standard-workflow>
+          <consumer class="jetty-message-consumer">
+            <unique-id>csv-db-destroy</unique-id>
+            <additional-debug>true</additional-debug>
+            <path>/csv-db-destroy</path>
+            <methods>GET</methods>
+            <parameter-handler class="jetty-http-ignore-parameters"/>
+            <header-handler class="jetty-http-ignore-headers"/>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>jovial-meninsky</unique-id>
+            <services>
+              <jdbc-raw-data-capture-service>
+                <unique-id>create-tickets-table</unique-id>
+                <connection class="shared-connection">
+                  <lookup-name>derby-db-conn</lookup-name>
+                </connection>
+                <parameter-applicator class="sequential-parameter-applicator"/>
+                <statement>DROP TABLE TICKETS</statement>
+              </jdbc-raw-data-capture-service>
+              <payload-from-template>
+                <unique-id>set-payload</unique-id>
+                <metadata-tokens/>
+                <template><![CDATA[Success - Database destroyed]]></template>
+              </payload-from-template>
+            </services>
+          </service-collection>
+          <producer class="jetty-standard-response-producer">
+            <unique-id>return-result</unique-id>
+            <status-provider class="http-configured-status">
+              <status>OK_200</status>
+            </status-provider>
+            <response-header-provider class="jetty-no-response-headers"/>
+            <content-type-provider class="http-configured-content-type-provider">
+              <mime-type>text/xml</mime-type>
+            </content-type-provider>
+            <send-payload>true</send-payload>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>csv-db-destroy</unique-id>
+        </standard-workflow>
+        <standard-workflow>
+          <consumer class="jetty-message-consumer">
+            <unique-id>csv-db-select</unique-id>
+            <additional-debug>true</additional-debug>
+            <path>/csv-db-select</path>
+            <methods>GET</methods>
+            <parameter-handler class="jetty-http-ignore-parameters"/>
+            <header-handler class="jetty-http-ignore-headers"/>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>jovial-meninsky</unique-id>
+            <services>
+              <jdbc-data-query-service>
+                <unique-id>select-data-from-tickets</unique-id>
+                <connection class="shared-connection">
+                  <lookup-name>derby-db-conn</lookup-name>
+                </connection>
+                <parameter-applicator class="sequential-parameter-applicator"/>
+                <statement-creator class="jdbc-configured-sql-statement">
+                  <statement>SELECT ISSUE_TYPE,PRIORITY,ISSUE_KEY,SUMMARY,STATUS,CREATED,UPDATED,CREATOR FROM TICKETS</statement>
+                </statement-creator>
+                <result-set-translator class="jdbc-xml-payload-translator">
+                  <column-name-style>LowerCase</column-name-style>
+                </result-set-translator>
+              </jdbc-data-query-service>
+            </services>
+          </service-collection>
+          <producer class="jetty-standard-response-producer">
+            <unique-id>return-result</unique-id>
+            <status-provider class="http-configured-status">
+              <status>OK_200</status>
+            </status-provider>
+            <response-header-provider class="jetty-no-response-headers"/>
+            <content-type-provider class="http-configured-content-type-provider">
+              <mime-type>text/xml</mime-type>
+            </content-type-provider>
+            <send-payload>true</send-payload>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>csv-db-select</unique-id>
+        </standard-workflow>
+      </workflow-list>
+      <unique-id>csv-db-api</unique-id>
     </channel>
   </channel-list>
   <message-error-digester class="standard-message-error-digester">

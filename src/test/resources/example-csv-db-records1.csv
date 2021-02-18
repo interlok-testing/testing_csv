@@ -1,0 +1,2 @@
+ISSUE_TYPE,PRIORITY,ISSUE_KEY,SUMMARY,STATUS,CREATED,UPDATED,CREATOR
+Story,Low,INTERLOK-3120,"UI Optional Component - Host the icons in a remote location (nexus, git?)",Open,2006-09-10-00.00.00,2006-09-10-00.00.00,Sebastien Belin

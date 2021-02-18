@@ -4,11 +4,11 @@ Project tests interlok-csv features
 
 ## What it does
 
-This project contains various workflows that make up a csv to xml/json API.
+This project contains various workflows that make up a csv transform API & a csv to db API.
 
 Each workflow is made up of:
 * a jetty-message-consumer that consumes parameters from a given uri path
-* a service from the interlok-csv or interlok-csv-json component that will do the transform
+* a service from the interlok-csv or interlok-csv-json component that will do the transform / database operations
 * a jetty-standard-response-producer that returns the payload result back to the requester
 
 
@@ -323,3 +323,86 @@ Low,INTERLOK-3120,Open
 Normal,INTERLOK-3121,Closed
 Normal,INTERLOK-3123,Closed
 ```
+
+### CSV to database using com.adaptris.csv.jdbc.BatchInsertCSV
+This api uses a derby database.
+
+First, we have to initialise the database (create the table we're going to use):
+```
+$ curl -s http://localhost:8081/csv-db-init
+Success - Database initialised
+```
+
+Now we can insert data into it:
+```
+$ curl -s -XPOST --data-binary "@src/test/resources/example-csv-db-records1.csv" "http://localhost:8081/csv-db-insert"
+ISSUE_TYPE,PRIORITY,ISSUE_KEY,SUMMARY,STATUS,CREATED,UPDATED,CREATOR
+Story,Low,INTERLOK-3120,"UI Optional Component - Host the icons in a remote location (nexus, git?)",Open,2006-09-10-00.00.00,2006-09-10-00.00.00,Sebastien Belin
+
+$ curl -s -XPOST --data-binary "@src/test/resources/example-csv-db-records2.csv" "http://localhost:8081/csv-db-insert"
+ISSUE_TYPE,PRIORITY,ISSUE_KEY,SUMMARY,STATUS,CREATED,UPDATED,CREATOR
+Story,Normal,INTERLOK-3153,Add a CSV Aggregator,Closed,2020-01-23-03.29.00,2020-01-23-04.32.00,Lewin Chan
+Story,Low,INTERLOK-3161,"UI Config - Enable the variable selector on key/value list inputs, before the add key/value action",Open,2020-01-28-03.56.00,2020-01-28-03.57.00,Paul Higginson
+Story,Normal,INTERLOK-3202,JCSMP - Update to use the new onAdaptrisMessage,Closed,2020-03-03-01.59.00,2020-04-27-04.09.00,Aaron McGrath
+```
+
+Lets select the data we've inserted into the database:
+```
+$ curl -s http://localhost:8081/csv-db-select
+```
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<results>
+   <row>
+      <issue_type>Story</issue_type>
+      <priority>Low</priority>
+      <issue_key>INTERLOK-3120</issue_key>
+      <summary>UI Optional Component - Host the icons in a remote location (nexus, git?)</summary>
+      <status>Open</status>
+      <created>2006-09-10 00:00:00.0</created>
+      <updated>2006-09-10 00:00:00.0</updated>
+      <creator>Sebastien Belin</creator>
+   </row>
+   <row>
+      <issue_type>Story</issue_type>
+      <priority>Normal</priority>
+      <issue_key>INTERLOK-3153</issue_key>
+      <summary>Add a CSV Aggregator</summary>
+      <status>Closed</status>
+      <created>2020-01-23 03:29:00.0</created>
+      <updated>2020-01-23 04:32:00.0</updated>
+      <creator>Lewin Chan</creator>
+   </row>
+   <row>
+      <issue_type>Story</issue_type>
+      <priority>Low</priority>
+      <issue_key>INTERLOK-3161</issue_key>
+      <summary>UI Config - Enable the variable selector on key/value list inputs, before the add key/value action</summary>
+      <status>Open</status>
+      <created>2020-01-28 03:56:00.0</created>
+      <updated>2020-01-28 03:57:00.0</updated>
+      <creator>Paul Higginson</creator>
+   </row>
+   <row>
+      <issue_type>Story</issue_type>
+      <priority>Normal</priority>
+      <issue_key>INTERLOK-3202</issue_key>
+      <summary>JCSMP - Update to use the new onAdaptrisMessage</summary>
+      <status>Closed</status>
+      <created>2020-03-03 01:59:00.0</created>
+      <updated>2020-04-27 04:09:00.0</updated>
+      <creator>Aaron McGrath</creator>
+   </row>
+</results>
+```
+
+Finally, lets drop the table, seeing as this is only a test:
+```
+$ curl -s http://localhost:8081/csv-db-destroy
+Success - Database destroyed
+```
+
+
+
+

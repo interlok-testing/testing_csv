@@ -1,0 +1,4 @@
+ISSUE_TYPE,PRIORITY,ISSUE_KEY,SUMMARY,STATUS,CREATED,UPDATED,CREATOR
+Story,Normal,INTERLOK-3153,Add a CSV Aggregator,Closed,2020-01-23-03.29.00,2020-01-23-04.32.00,Lewin Chan
+Story,Low,INTERLOK-3161,"UI Config - Enable the variable selector on key/value list inputs, before the add key/value action",Open,2020-01-28-03.56.00,2020-01-28-03.57.00,Paul Higginson
+Story,Normal,INTERLOK-3202,JCSMP - Update to use the new onAdaptrisMessage,Closed,2020-03-03-01.59.00,2020-04-27-04.09.00,Aaron McGrath
