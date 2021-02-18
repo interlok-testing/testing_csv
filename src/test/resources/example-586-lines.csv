@@ -1,0 +1,587 @@
+Issue Type,Priority,Issue key,Summary,Status,Created,Updated,Creator
+Story,Low,INTERLOK-3120,"UI Optional Component - Host the icons in a remote location (nexus, git?)",Open,05/01/2020 07:03,10/02/2021 02:52,Sebastien Belin
+Story,Normal,INTERLOK-3121,UI Config - Support README.md file in the config page,Closed,05/01/2020 08:48,06/08/2020 04:54,Sebastien Belin
+Improvement,Normal,INTERLOK-3122,UI - Update Copyrights year to 2020,Closed,05/01/2020 09:25,05/02/2020 02:37,Sebastien Belin
+Story,Normal,INTERLOK-3123,Bump google-cloud-pubsub from 1.98.0 to 1.102.0,Closed,06/01/2020 08:28,09/06/2020 08:10,Lewin Chan
+Story,Lowest,INTERLOK-3128,UI Config Settings Editor - metadata preview should have information about where the md originated from,Open,07/01/2020 05:52,07/01/2020 05:52,Paul Higginson
+Story,Normal,INTERLOK-3129,Document the new multi-payload services,Closed,07/01/2020 06:08,12/02/2020 02:53,Aaron McGrath
+Story,Normal,INTERLOK-3130,Look into random test failures.,Closed,07/01/2020 07:08,18/02/2020 03:03,Aaron McGrath
+Improvement,Normal,INTERLOK-3131,Service Tester - AssertionResult has a uniqueId member which is never used,Closed,08/01/2020 06:39,07/02/2020 05:53,Sebastien Belin
+Bug,Normal,INTERLOK-3132,ClassCastException with profiler when using custom services,Closed,13/01/2020 03:46,18/02/2020 06:44,Baldev Klair
+Bug,Normal,INTERLOK-3133,Artifact Downloader - Cross-site Scripting (XSS),Closed,14/01/2020 01:24,18/03/2020 07:30,Sebastien Belin
+Bug,Normal,INTERLOK-3134,Artifact Downloader - Denial of Service (DoS),Closed,14/01/2020 01:25,18/03/2020 07:33,Sebastien Belin
+Bug,Normal,INTERLOK-3135,Profiler - Adding consumer events to map is wrong.,Closed,14/01/2020 10:48,18/02/2020 03:02,Aaron McGrath
+Improvement,Normal,INTERLOK-3136,interlok-cxf 'use-fallback-transformer' should default to true since Saxon 9.9 doesn't play nice,Closed,15/01/2020 05:36,04/02/2020 05:27,Lewin Chan
+Story,Normal,INTERLOK-3137,Apache Http Producer - file as form-data,Open,15/01/2020 08:33,01/12/2020 04:11,Aaron McGrath
+Bug,Normal,INTERLOK-3138,UI - Warning and stacktrace for jxpaths class not found on startup ,Closed,15/01/2020 08:45,19/01/2020 08:01,Sebastien Belin
+Improvement,Normal,INTERLOK-3139,UI Profiler - Zero messages displayed for some workflows,Open,16/01/2020 03:04,16/01/2020 03:04,Aaron McGrath
+Story,Normal,INTERLOK-3140,Profiler - Test the profiler running in docker,Closed,16/01/2020 03:07,12/02/2020 08:20,Aaron McGrath
+Story,Normal,INTERLOK-3141,Add DataInput + DataOutputParameters that are multi-payload aware,Closed,17/01/2020 03:47,04/02/2020 02:24,Lewin Chan
+Bug,Critical,INTERLOK-3142,JMXMP Vulnerability ... needs verification / recommendations.,Closed,17/01/2020 06:06,22/07/2020 06:24,Lewin Chan
+Story,Normal,INTERLOK-3143,LogMessageService with a log payload only logger.,Closed,17/01/2020 11:46,29/01/2020 01:35,Aaron McGrath
+Bug,Normal,INTERLOK-3144,Service Tester - Running a ServiceTest with a workingDirectory with space in its name results in failed tests,Closed,20/01/2020 02:07,03/03/2020 07:14,Sebastien Belin
+Bug,Normal,INTERLOK-3145,interlok-custom-component-example Does not include the anno-processor,Closed,20/01/2020 10:38,05/02/2020 03:39,Aaron McGrath
+Story,Normal,INTERLOK-3146,UI Config Settings Editor - give the settings inputs a 'code autocomplete' feature for % properties,Closed,21/01/2020 05:48,19/10/2020 05:00,Paul Higginson
+Story,Normal,INTERLOK-3147,UI Component Search - Can we publish the lucene index & build a deliverable war for the component search to use?,Open,21/01/2020 06:00,21/01/2020 06:01,Paul Higginson
+Story,Normal,INTERLOK-3148,How can we gather Interlok usage analytics?,Open,21/01/2020 06:07,21/01/2020 07:03,Paul Higginson
+Story,Normal,INTERLOK-3149,UI - Can we allow users to configure the context path of the UI?,Open,21/01/2020 06:14,21/01/2020 08:34,Paul Higginson
+Story,Normal,INTERLOK-3150,"License update - Apache V2,",Open,21/01/2020 07:58,21/01/2020 08:03,Aaron McGrath
+Improvement,Normal,INTERLOK-3151,UI - Upgrade to the latest moment.js,Closed,22/01/2020 07:11,27/01/2020 06:21,Sebastien Belin
+Story,Normal,INTERLOK-3152,Turn interlok-api-demo into a gradle project,Open,23/01/2020 03:06,23/01/2020 03:06,Lewin Chan
+Story,Normal,INTERLOK-3153,Add a CSV Aggregator,Closed,23/01/2020 03:29,23/01/2020 04:32,Lewin Chan
+Story,Normal,INTERLOK-3154,Add a validating CSV Aggregator,Closed,23/01/2020 04:36,09/04/2020 02:39,Lewin Chan
+Bug,Normal,INTERLOK-3155,StaxSplitter removes empty/whitespace elements when it probably shouldn't.,Closed,23/01/2020 06:01,28/01/2020 04:13,Lewin Chan
+Story,Low,INTERLOK-3156,Multi-stage Docker image builds,Open,24/01/2020 04:11,11/03/2020 06:57,Lewin Chan
+Story,Normal,INTERLOK-3157,Add MBean that exposes size of cache / keys in the cache,Open,24/01/2020 09:22,01/10/2020 04:41,Lewin Chan
+Story,Normal,INTERLOK-3158,Per-item cache expiry where supported by the underlying cache provider,Closed,24/01/2020 09:31,15/04/2020 09:26,Lewin Chan
+Story,Normal,INTERLOK-3159,UI Service Test - Use the service-unique-preprocessor instead of xpath preprocessor when generating service tests,Closed,28/01/2020 03:05,20/02/2020 02:48,Sebastien Belin
+Story,Normal,INTERLOK-3160,UI Service Test - When a project is loaded have possibility to generate service tests from loaded project config,Closed,28/01/2020 03:15,09/04/2020 07:29,Sebastien Belin
+Story,Low,INTERLOK-3161,"UI Config - Enable the variable selector on key/value list inputs, before the add key/value action",Open,28/01/2020 03:56,28/01/2020 03:57,Paul Higginson
+Story,Normal,INTERLOK-3162,"Change default JSON transformation driver to ""simple-json""",Closed,28/01/2020 04:23,03/02/2020 10:25,Lewin Chan
+Story,Normal,INTERLOK-3163,CloneMessageServiceList requires 2 steps to preserve metadata,Closed,28/01/2020 08:48,29/01/2020 06:52,Lewin Chan
+Improvement,Normal,INTERLOK-3164,UI - Upgrade Reflections to 0.9.12,Reopened,29/01/2020 02:49,30/04/2020 04:16,Sebastien Belin
+Story,Normal,INTERLOK-3165,Add dependabot capability to interlok-ui / internal projects.,Open,29/01/2020 03:24,29/01/2020 03:24,Lewin Chan
+Bug,Normal,INTERLOK-3166,FtpConsumers do not work with FileBackedMessages,Closed,29/01/2020 04:48,29/01/2020 11:31,Lewin Chan
+Bug,Normal,INTERLOK-3167,interlok-pgp doesn't support FileDataInputParameter,Closed,30/01/2020 02:34,18/02/2020 04:36,Lewin Chan
+Story,Normal,INTERLOK-3168,UI Config - promote the 'navigation tree' from 'Technical preview' to be part of release ,Closed,30/01/2020 04:07,03/02/2020 10:27,Paul Higginson
+Story,Normal,INTERLOK-3169,UI - Upgrade libs from interlok-ui-deps,Closed,02/02/2020 06:16,03/02/2020 06:12,Sebastien Belin
+Story,Normal,INTERLOK-3170,JSONToFixedCVS should allow you to configure the CSV style,Closed,04/02/2020 03:41,07/02/2020 01:32,Lewin Chan
+Bug,Normal,INTERLOK-3171,JSONToFixedCVS doesn't support JSON_LINES,Closed,04/02/2020 05:20,07/02/2020 01:32,Lewin Chan
+Bug,Normal,INTERLOK-3172,JdbcDataQueryService CDATA columns are not bounded by a CDATA section,Closed,05/02/2020 08:12,05/02/2020 09:43,Lewin Chan
+Improvement,Normal,INTERLOK-3173,UI - Upgrade jacoco to 0.8.5,Closed,05/02/2020 07:38,11/02/2020 05:46,Sebastien Belin
+Story,Normal,INTERLOK-3174,Remove getUniqueId use in the UI for ServiceTester,Closed,07/02/2020 05:50,04/03/2020 04:38,Lewin Chan
+Bug,Normal,INTERLOK-3175,CircleCI builds broken due to java.security rewrite,Closed,10/02/2020 02:34,12/02/2020 04:58,Lewin Chan
+Story,Normal,INTERLOK-3176,Add support for dead letter queues in SQS,Closed,12/02/2020 05:58,18/02/2020 05:25,Lewin Chan
+Bug,Normal,INTERLOK-3177,[Java11 + docker] JMXMP doesn't appear to start.,Closed,12/02/2020 09:36,05/01/2021 10:59,Lewin Chan
+Story,Low,INTERLOK-3178,Applying the logging-context-workflow-interceptor at the Channel level,Open,13/02/2020 04:58,13/02/2020 05:18,Navpreet Kaur
+Improvement,Normal,INTERLOK-3179,Base64 w/o newlines,Closed,14/02/2020 03:06,17/02/2020 09:41,Lewin Chan
+Bug,Blocker,INTERLOK-3180,UI doesn't start on 3.10-SNAPSHOT  (CentOS 6),Closed,14/02/2020 05:00,17/02/2020 09:57,Lewin Chan
+Bug,Normal,INTERLOK-3181,Upgrade POI to 4.12 on interlok-excel,Closed,17/02/2020 10:21,02/06/2020 04:38,Lewin Chan
+Improvement,Normal,INTERLOK-3182,Bump kafka version from 1.1.1 to 2.4.0,Closed,17/02/2020 10:24,19/02/2020 08:14,Lewin Chan
+Improvement,,INTERLOK-3183,metadata-tokens bug in payload-from-metadata-service,Closed,17/02/2020 11:01,05/03/2020 06:45,Cassie Cox
+Story,Low,INTERLOK-3184,PayloadFromMetadataService : metadata-tokens should be KeyValuePairList not Set,Closed,17/02/2020 12:08,05/03/2020 06:43,Lewin Chan
+Story,Normal,INTERLOK-3185,Component Project Template,Closed,18/02/2020 05:24,07/05/2020 09:15,Aaron McGrath
+Bug,Normal,INTERLOK-3186,UI: Variables in KeyValuePairSets don't work.,Closed,19/02/2020 05:14,20/02/2020 02:48,Lewin Chan
+Improvement,Normal,INTERLOK-3187,Add repository/readme locations to opensource projects,Closed,19/02/2020 10:35,25/01/2021 04:45,Lewin Chan
+Story,Normal,INTERLOK-3188,"parent.gradle : Different configurations for ""changing"" modules",Closed,20/02/2020 02:41,12/03/2020 07:54,Lewin Chan
+Improvement,Low,INTERLOK-3189,Multi-widget Selection Functionality,Open,24/02/2020 08:47,26/02/2020 04:29,Din Stolak
+Improvement,Normal,INTERLOK-3190,Add a logging context aspect to the profiler,Closed,25/02/2020 05:08,25/02/2020 07:28,Lewin Chan
+Story,Normal,INTERLOK-3191,Document Profiler for developers,Closed,25/02/2020 11:47,24/03/2020 10:25,Aaron McGrath
+Story,Normal,INTERLOK-3192,Docker image in labs for Prometheus/Graphana,Closed,25/02/2020 11:51,27/03/2020 02:28,Aaron McGrath
+Story,Normal,INTERLOK-3193,Profiler - Add support for additional metrics.,Closed,25/02/2020 11:53,27/04/2020 04:08,Aaron McGrath
+Story,Normal,INTERLOK-3194,UI : Save project should create additional files,Closed,25/02/2020 12:02,20/04/2020 07:29,Lewin Chan
+Bug,Normal,INTERLOK-3195,UI interlok-3.9.3-RELEASE.war: bootstrap.min.js has CVEs,Closed,26/02/2020 10:50,04/08/2020 07:05,Lewin Chan
+Story,Normal,INTERLOK-3196,javax.mail / MailConsumer maybe broken post October 2020 against Office365,Closed,26/02/2020 11:35,25/11/2020 09:25,Lewin Chan
+Story,Normal,INTERLOK-3197,Switch from com.sun.mail:javax.mail -> jakarta mail,Closed,26/02/2020 11:52,27/04/2020 04:08,Lewin Chan
+Bug,Normal,INTERLOK-3198,UI: Missing deprecation warning in splitter,Closed,27/02/2020 03:12,12/06/2020 02:13,Matthew Warman
+Story,Normal,INTERLOK-3199,interlok parent gradle adding non-built-in plugins to force owasp checks,Closed,27/02/2020 05:57,17/04/2020 01:59,Lewin Chan
+Bug,Normal,INTERLOK-3200,parent gradle -> dir with spaces breaks interlokVerify,Closed,28/02/2020 09:57,06/03/2020 05:05,Lewin Chan
+Bug,Normal,INTERLOK-3201,JettyManagementComponent broken with spaces in path.,Closed,28/02/2020 09:59,04/03/2020 01:08,Lewin Chan
+Story,Normal,INTERLOK-3202,JCSMP - Update to use the new onAdaptrisMessage,Closed,03/03/2020 01:59,27/04/2020 04:09,Aaron McGrath
+Story,Normal,INTERLOK-3203,SwiftMQ - unit tests fail occassionally,Closed,03/03/2020 02:02,19/08/2020 07:43,Aaron McGrath
+Story,Normal,INTERLOK-3204,New transformation service,Closed,03/03/2020 04:44,17/04/2020 05:53,Aaron McGrath
+Bug,Normal,INTERLOK-3205,Add null protection to JsonPathService,Closed,04/03/2020 09:44,05/03/2020 04:05,Lewin Chan
+Story,Normal,INTERLOK-3206,Document use of JGroups in clustering/failover,Closed,05/03/2020 03:19,18/05/2020 08:20,Aaron McGrath
+Improvement,Low,INTERLOK-3207,adaptris-labs/interlok-hpcc-docker should use parent gradle.,Closed,05/03/2020 04:05,15/06/2020 10:55,Lewin Chan
+Story,Normal,INTERLOK-3208,"REST api for clustering,",Closed,05/03/2020 04:22,24/03/2020 04:43,Aaron McGrath
+Bug,Normal,INTERLOK-3209,build-parent build.gradle is cached so we don't pickup changes,Closed,05/03/2020 04:40,05/03/2020 06:42,Lewin Chan
+Story,Normal,INTERLOK-3210,Clustering - Add the adapter ID,Closed,05/03/2020 04:46,20/03/2020 10:41,Aaron McGrath
+Story,Normal,INTERLOK-3211,AWS Key management services,Closed,05/03/2020 06:52,27/04/2020 04:07,Lewin Chan
+Story,Normal,INTERLOK-3212,REST services consolidate management components.,Open,05/03/2020 07:53,13/01/2021 04:41,Aaron McGrath
+Story,Normal,INTERLOK-3213,Upgrade spotbugs breaks all builds,Closed,05/03/2020 10:15,28/04/2020 07:51,Lewin Chan
+Story,Normal,INTERLOK-3214,Add escaping services for single and double quote,Closed,06/03/2020 03:42,07/04/2020 02:23,Lewin Chan
+Story,Normal,INTERLOK-3215,SwiftMQ - Multipayload,Resolved,09/03/2020 05:38,08/09/2020 02:15,Aaron McGrath
+Improvement,Normal,INTERLOK-3216,Upgrade swiftMQ client to 12.x,Closed,09/03/2020 05:45,21/04/2020 08:25,Lewin Chan
+Story,Normal,INTERLOK-3217,UI Optional Component - add support for multiple 'Group ID's,Open,10/03/2020 08:54,11/03/2020 05:00,Paul Higginson
+Story,Normal,INTERLOK-3218,Have an adaptris/interlok-barebones image,In Progress,11/03/2020 06:57,13/01/2021 03:06,Lewin Chan
+Story,Normal,INTERLOK-3219,Remove the need for jetty.xml/webdefault.xml,Closed,12/03/2020 03:56,16/06/2020 07:15,Lewin Chan
+Improvement,Normal,INTERLOK-3220,"Decide on which adaptris-labs projects are ""loved""",In Progress,12/03/2020 11:40,25/01/2021 05:20,Lewin Chan
+Improvement,Normal,INTERLOK-3221,Ui - Upgrade jersey to 2.30.1,Closed,12/03/2020 06:45,25/03/2020 05:31,Sebastien Belin
+Bug,Normal,INTERLOK-3222,"Information Disclosure out of ""health-check"" management component.",Closed,13/03/2020 05:13,29/04/2020 07:44,Lewin Chan
+Story,Normal,INTERLOK-3223,OAUTH - AccessToken should support refresh_token,Closed,23/03/2020 08:37,21/05/2020 01:46,Lewin Chan
+Story,Normal,INTERLOK-3224,interlok-aws-s3: List Operation only returns the first 1000 results,Closed,23/03/2020 10:24,27/04/2020 04:12,Matthew Warman
+Story,Normal,INTERLOK-3225,Shorten the OAUTH authentication chain,Closed,24/03/2020 10:16,27/04/2020 04:08,Lewin Chan
+Story,Low,INTERLOK-3226,Add --help to interlok-boot.jar so people can see what options are available,Open,25/03/2020 05:31,25/03/2020 05:31,Paul Higginson
+Bug,Critical,INTERLOK-3227,UI Projects - Using variables in adapter advanced components can break all other existing variable xpaths,Closed,01/04/2020 04:53,02/04/2020 05:08,Matthew Warman
+Bug,Normal,INTERLOK-3228,UI Projects - The variable xpaths on adapter advanced components can be wrong,Closed,01/04/2020 08:44,02/04/2020 05:08,Paul Higginson
+Bug,Normal,INTERLOK-3229,interlok-aws-s3: Download operation doesn't clean up files in long running splitter.,Closed,01/04/2020 11:18,09/04/2020 02:39,Matthew Warman
+Bug,Normal,INTERLOK-3230,ChannelRestartProduceExceptionHandler doesn't fully restart channels.,Closed,07/04/2020 10:33,29/06/2020 02:08,Aaron McGrath
+Story,Normal,INTERLOK-3231,Investigate RetryMessHandler with a restarting produce exception handler,Closed,08/04/2020 12:37,11/06/2020 09:01,Aaron McGrath
+Story,Normal,INTERLOK-3232,SMTP - Expressions,Closed,14/04/2020 04:37,17/04/2020 01:59,Aaron McGrath
+Bug,Low,INTERLOK-3233,interlok-stubs : log4j2 jars aren't optional.,Closed,14/04/2020 07:35,27/05/2020 07:59,Lewin Chan
+Story,Normal,INTERLOK-3234,Add support for a SMB consumer/producer,Closed,14/04/2020 09:37,01/05/2020 06:35,Lewin Chan
+Bug,Normal,INTERLOK-3235,UI - Apache Shiro Web Vulnerability,Closed,15/04/2020 09:10,16/04/2020 04:47,Matthew Warman
+Story,Normal,INTERLOK-3236,UI - jQuery Vulnerability ,Open,15/04/2020 09:12,15/04/2020 09:12,Matthew Warman
+Bug,Normal,INTERLOK-3237,UI - fix Vulnerability with commons-configuration2,Closed,15/04/2020 09:49,19/04/2020 07:32,Paul Higginson
+Bug,Normal,INTERLOK-3238,UI - fix Vulnerability with snakeyaml,Closed,15/04/2020 09:55,21/04/2020 03:51,Paul Higginson
+Story,Normal,INTERLOK-3239,UI - Dependency Vulnerability commons-configuration2-2.6.jar,Closed,15/04/2020 11:48,15/04/2020 01:46,Matthew Warman
+Story,Normal,INTERLOK-3240,UI - Remove/Replace the 'Got Feedback?' feature ,Closed,16/04/2020 10:03,01/05/2020 02:25,Paul Higginson
+Story,Normal,INTERLOK-3241,UI : Save project should create used optional component list,Closed,19/04/2020 07:40,23/06/2020 07:28,Sebastien Belin
+Improvement,Normal,INTERLOK-3242,Bump flyway-core from 6.0.4 to 6.3.3,Closed,19/04/2020 10:32,20/04/2020 07:29,Sebastien Belin
+Improvement,Normal,INTERLOK-3243,Bump hibernate.version from 5.4.10.Final to 5.4.14.Final,Closed,20/04/2020 07:37,21/04/2020 03:51,Sebastien Belin
+Improvement,Normal,INTERLOK-3244,Bump hibernate-validator from 6.1.3.Final to 6.1.4.Final,Closed,21/04/2020 08:28,23/04/2020 01:51,Sebastien Belin
+Bug,Normal,INTERLOK-3245,UI - XML External Entity (XXE) Injection,Closed,23/04/2020 06:22,24/04/2020 04:25,Sebastien Belin
+Bug,Low,INTERLOK-3246,UI - Fingerprint-maven-plugin upgrade commons-codec to at least 1.13,Closed,23/04/2020 07:13,17/07/2020 01:56,Sebastien Belin
+Story,Normal,INTERLOK-3247,Listing BlobStorage objects should not force creation of Collection,Closed,24/04/2020 04:22,02/06/2020 05:26,Lewin Chan
+Story,Normal,INTERLOK-3248,Synchronous Kinesis Stream Producer,Closed,24/04/2020 04:25,08/06/2020 03:33,Lewin Chan
+Improvement,Normal,INTERLOK-3249,UI - Add new optional component icons for 3.10.1,Closed,24/04/2020 04:37,24/04/2020 05:31,Paul Higginson
+Bug,Low,INTERLOK-3250,AdapterRegistryMBean.getManagementComponentInfo() can result in exception as ManagementComponentInfo needs serialization,Closed,24/04/2020 05:41,26/07/2020 07:13,Paul Higginson
+Story,Normal,INTERLOK-3251,UI Dashboard - Add Adapter Management Info to the Information modal,Closed,24/04/2020 05:47,29/07/2020 08:22,Paul Higginson
+Story,Normal,INTERLOK-3252,workflow-rest-services should add a logging context,Closed,24/04/2020 10:50,27/04/2020 08:50,Lewin Chan
+Bug,Normal,INTERLOK-3253,"docker build ""latest"" for adaptris/interlok:latest is pinned on a specific version.",Open,27/04/2020 08:34,27/04/2020 08:36,Lewin Chan
+Bug,Normal,INTERLOK-3254,"interlok-shell ""help"" doesn't work",Closed,28/04/2020 08:39,28/04/2020 08:58,Lewin Chan
+Story,Normal,INTERLOK-3255,Deprecate interlok-shell since it isn't supported in Java 11,Closed,28/04/2020 09:49,28/04/2020 10:16,Lewin Chan
+Bug,Normal,INTERLOK-3256,Interlok-shell - Investigate ,Closed,28/04/2020 11:38,07/05/2020 09:15,Aaron McGrath
+Improvement,Low,INTERLOK-3257,The UI's settings editor URL Encoder should also encode Tildes,Open,29/04/2020 06:08,29/04/2020 06:08,Din Stolak
+Story,Normal,INTERLOK-3258,Build a test adapter image that has *all* interlok optional components and that runs,Closed,30/04/2020 10:22,05/08/2020 04:24,Lewin Chan
+Story,Normal,INTERLOK-3259,interlok-solace doesn't need solace jars as optional,Closed,30/04/2020 10:53,08/06/2020 08:26,Lewin Chan
+Story,Normal,INTERLOK-3260,interlok-workflow-rest-services: Liveness vs Readiness Probes,Closed,05/05/2020 06:40,08/06/2020 08:11,Matthew Warman
+Bug,Normal,INTERLOK-3261,UI Service Tester - Generate Tests Model is missing vertical scroll bar when options list is too big,Closed,06/05/2020 04:32,19/05/2020 07:14,Paul Higginson
+Bug,Normal,INTERLOK-3262,"Interlok-Shell - workflow command results in exception: Missing option [c, channel]",Closed,06/05/2020 05:31,06/05/2020 05:43,Paul Higginson
+Bug,Normal,INTERLOK-3263,UI Service Tester - Issue loading service tester config from the 'local adapter storage' (\ui-resources\config-project-store),Closed,06/05/2020 05:51,20/05/2020 07:44,Paul Higginson
+Improvement,Low,INTERLOK-3264,interlok-fx-installer should be in the build chain,Open,06/05/2020 05:56,06/05/2020 05:56,Lewin Chan
+Story,Normal,INTERLOK-3265,Index of components for v4,Open,06/05/2020 11:20,13/01/2021 03:00,Aaron McGrath
+Story,Normal,INTERLOK-3266,"Config IDE - two artefacts from builds, core and config beans.",Open,06/05/2020 11:20,13/01/2021 04:39,Aaron McGrath
+Story,Normal,INTERLOK-3267,Javafx installer - Downloads page,Closed,06/05/2020 11:20,07/05/2020 09:16,Aaron McGrath
+Story,Normal,INTERLOK-3268,Web UI - gradle,Closed,06/05/2020 11:20,23/06/2020 05:06,Aaron McGrath
+Story,Normal,INTERLOK-3269,Official doc site update,Closed,06/05/2020 11:20,06/10/2020 04:04,Aaron McGrath
+Story,Normal,INTERLOK-3270,JMX -> Jolokia,Closed,06/05/2020 11:20,13/01/2021 06:09,Aaron McGrath
+Story,Normal,INTERLOK-3271,Opinionated x-include style config,Open,06/05/2020 11:20,11/02/2021 03:54,Aaron McGrath
+Technical task,Normal,INTERLOK-3272,Jenkins jobs for V4.,Closed,06/05/2020 11:20,09/02/2021 10:01,Aaron McGrath
+Story,Normal,INTERLOK-3273,Switch all projects to build with Java 11,Closed,06/05/2020 11:20,10/02/2021 02:33,Aaron McGrath
+Story,Normal,INTERLOK-3274,Export our jira and confluence and import to proagrica tooling,Open,06/05/2020 11:20,22/01/2021 03:58,Aaron McGrath
+Story,Normal,INTERLOK-3275,Move from bitbucket to gitlab.agb,Closed,06/05/2020 11:20,08/06/2020 09:29,Aaron McGrath
+Story,Normal,INTERLOK-3276,JCSMP further improvements,Closed,06/05/2020 11:30,25/08/2020 10:06,Aaron McGrath
+Story,Normal,INTERLOK-3277,JMS bridging - failures on produce,Closed,06/05/2020 11:33,17/06/2020 07:37,Aaron McGrath
+Story,Normal,INTERLOK-3278,create config objects for configurable components,In Progress,06/05/2020 11:37,13/01/2021 04:42,Aaron McGrath
+Bug,Normal,INTERLOK-3279,Artifact Downloader - Improper Input Validation,Closed,07/05/2020 12:53,22/05/2020 03:49,Sebastien Belin
+Improvement,Normal,INTERLOK-3280,UI - Upgrade dependencies,Closed,07/05/2020 01:40,25/05/2020 03:08,Sebastien Belin
+Bug,Normal,INTERLOK-3281,"JavaFX Installer does not install ""bin"" folder",Resolved,11/05/2020 09:27,11/05/2020 09:39,Gerco Dries
+Bug,Normal,INTERLOK-3282,OFTP doesn't build in QHS,Closed,11/05/2020 10:04,12/05/2020 08:30,Lewin Chan
+Story,Normal,INTERLOK-3283,License expiry event as a heartbeat,Closed,12/05/2020 06:59,08/06/2020 08:31,Aaron McGrath
+Story,Normal,INTERLOK-3284,Add OWASP suppression for javax.websocket-api warnings,Closed,14/05/2020 04:32,14/05/2020 06:09,Matthew Warman
+Improvement,Normal,INTERLOK-3285,Mark interlok-salesforce as deprecated,Closed,14/05/2020 05:17,01/06/2020 08:04,Lewin Chan
+Story,Normal,INTERLOK-3286,#NAME?,Closed,14/05/2020 06:14,05/08/2020 11:18,Lewin Chan
+Story,Normal,INTERLOK-3287,New extended validation reporting for deprecated items,Closed,14/05/2020 06:22,10/11/2020 09:37,Lewin Chan
+Story,Normal,INTERLOK-3288,Update circleci to publish develop on_commit,Open,14/05/2020 06:51,14/05/2020 06:52,Matthew Warman
+Story,Normal,INTERLOK-3289,Update Dashboard to report actual bad directory count,Closed,18/05/2020 02:17,03/09/2020 05:44,brian.grinter
+Story,Normal,INTERLOK-3290,Update XML schema validation to report all validation errors,Closed,18/05/2020 03:43,08/06/2020 08:12,Matthew Warman
+Story,Normal,INTERLOK-3291,Cluster Manager - Override the JGroups config,Closed,18/05/2020 07:27,21/05/2020 06:37,Aaron McGrath
+Story,Normal,INTERLOK-3292,Upgrade WMQ to the latest,Closed,18/05/2020 09:47,05/08/2020 04:29,Aaron McGrath
+Story,Normal,INTERLOK-3293,interlok apache-geode needs testing with interlok-jmx-activemq + interlok-activemq,Open,19/05/2020 01:55,19/05/2020 03:15,Lewin Chan
+Story,Normal,INTERLOK-3294,interlok-cassandra dependencies ,Open,19/05/2020 02:11,19/05/2020 02:11,Lewin Chan
+Story,Normal,INTERLOK-3295,Add support for Signing HTTP Requests to the AWS managed Elasticsearch Service,Closed,19/05/2020 04:16,08/06/2020 08:12,Matthew Warman
+Story,Normal,INTERLOK-3296,interlok-stubs should be its own top level project,Open,21/05/2020 01:43,21/05/2020 02:08,Lewin Chan
+Bug,Normal,INTERLOK-3297,UI - Not starting with jackson-databind 2.11.0 because of swagger,Closed,21/05/2020 04:40,28/05/2020 04:10,Sebastien Belin
+Bug,Normal,INTERLOK-3298,Atrifact Downloader - Remote Code Execution (RCE),Closed,22/05/2020 05:13,09/06/2020 04:47,Sebastien Belin
+Story,Normal,INTERLOK-3299,interlok-azure-cosmosdb: Auth should be a Request Interceptor,Closed,26/05/2020 08:46,06/01/2021 02:15,Matthew Warman
+Story,Normal,INTERLOK-3300,Interlok V4 - Write some poc annotation project for the config beans,Closed,26/05/2020 08:20,25/11/2020 09:33,Sebastien Belin
+Story,Normal,INTERLOK-3301,Junit tests can't be run in parallel (interlok-core),Open,28/05/2020 01:39,01/12/2020 04:22,Lewin Chan
+Improvement,Normal,INTERLOK-3302,Upgrade events to also include hostname,Closed,28/05/2020 02:56,25/11/2020 10:00,Baldev Klair
+Story,Normal,INTERLOK-3303,interlok-jcloud-blobstore: Allow connection to S3 using sessionToken,Closed,29/05/2020 12:59,08/06/2020 08:12,Matthew Warman
+Bug,Normal,INTERLOK-3304,Unckecked Exceptions in FsConsumer - hang.,Open,01/06/2020 09:20,01/06/2020 09:20,Aaron McGrath
+Bug,Normal,INTERLOK-3305,Fix interlok-install-builder for 3.10.2,Closed,02/06/2020 02:44,23/06/2020 02:16,Lewin Chan
+Improvement,Low,INTERLOK-3306,Reports - create/upload the planning reports for 2020b and 2020c,Closed,02/06/2020 05:53,02/06/2020 08:00,Paul Higginson
+Improvement,Low,INTERLOK-3307,Reports - create/upload the yearly retrospective report for 2019,Closed,02/06/2020 05:54,02/06/2020 08:44,Paul Higginson
+Improvement,Normal,INTERLOK-3308,UI Optional Component Page - Create UI Icons for additional optional components,Closed,02/06/2020 05:56,22/06/2020 03:00,Paul Higginson
+Bug,Normal,INTERLOK-3309,interlok-okhttp relies on ptsv2 (which is broken),Closed,03/06/2020 01:58,04/06/2020 06:40,Lewin Chan
+Improvement,Normal,INTERLOK-3310,Interlok Docs - check pages for broken links (known issue with interlok mail links),Closed,03/06/2020 04:05,04/06/2020 09:45,Paul Higginson
+Improvement,Normal,INTERLOK-3311,interlok-install-builder - check that the installer build process includes the appropriate jar artefact for mail javadocs,Closed,03/06/2020 04:08,23/06/2020 08:27,Paul Higginson
+Story,Normal,INTERLOK-3312,Create gitlab-ci to projects in new gitlab.proagrica-tooling.dev,Open,03/06/2020 06:33,03/06/2020 06:33,Lewin Chan
+Story,Normal,INTERLOK-3313,interlok-base:snapshot image does not need base-filesystem.zip,Open,03/06/2020 11:00,03/06/2020 11:00,Lewin Chan
+Improvement,Low,INTERLOK-3314,Interlok Docs - update all the 3.9-snapshot javadoc references to point to 3.11-snapshot,Closed,04/06/2020 09:49,03/09/2020 10:14,Paul Higginson
+Story,Normal,INTERLOK-3315,Remove deprecated jetty config sockerLingerTime,Closed,04/06/2020 10:51,08/06/2020 08:10,Matthew Warman
+Story,Low,INTERLOK-3316,Exclude content from mavenCentral repos in gradle,Open,04/06/2020 01:39,01/12/2020 04:05,Lewin Chan
+Bug,Normal,INTERLOK-3317,interlok-gcloud-pubsub: review dependencies needed for it to work,Closed,04/06/2020 02:04,09/06/2020 08:10,Matthew Warman
+Story,Normal,INTERLOK-3318,interlok-aws-s3: New copy-operation that copies object metadata & tags.,Closed,06/06/2020 02:20,15/06/2020 01:41,Matthew Warman
+Improvement,Normal,INTERLOK-3319,UI - Bump flyway-core from 6.4.0 to 6.4.3,Closed,07/06/2020 08:03,09/06/2020 03:53,Sebastien Belin
+Improvement,Normal,INTERLOK-3320,Interlok Docs - Add notes regarding the JMXMP Vulnerability,Closed,09/06/2020 05:23,03/09/2020 07:53,Paul Higginson
+Bug,Normal,INTERLOK-3321,gcloud-pubsub has an undeclared dependency on gson,Closed,09/06/2020 08:36,09/06/2020 10:15,Lewin Chan
+Story,Low,INTERLOK-3322,Add CSV/XML implementations that use super-csv,Closed,10/06/2020 07:47,26/08/2020 02:08,Lewin Chan
+Story,Normal,INTERLOK-3323,"Remove dependency on dev-vm03 for ""html-docs""",Closed,11/06/2020 01:35,04/08/2020 06:56,Lewin Chan
+Bug,Normal,INTERLOK-3324,UI: New projects do not always save as a structured project,Closed,11/06/2020 01:44,12/06/2020 04:05,Lewin Chan
+Bug,Normal,INTERLOK-3325,interlok-aws-common should depend on jackson-dataformat-cbor,Closed,11/06/2020 06:06,11/06/2020 06:21,Lewin Chan
+Improvement,Normal,INTERLOK-3326,"Review logging from ""conditions""",Open,15/06/2020 04:45,30/11/2020 03:31,Lewin Chan
+Story,Normal,INTERLOK-3327,Interlok workflow API,Open,15/06/2020 05:23,15/06/2020 05:24,Aaron McGrath
+Story,Normal,INTERLOK-3328,Revert docker base images to use JDK not JRE,Closed,15/06/2020 08:32,16/06/2020 06:45,Aaron McGrath
+Story,Normal,INTERLOK-3329,Deprecated ConsumeDestination and ProduceDestination,Closed,16/06/2020 08:28,29/07/2020 03:31,Lewin Chan
+Story,Normal,INTERLOK-3330,ProduceExceptionHandler Deprecate?,Open,17/06/2020 07:36,22/01/2021 03:58,Aaron McGrath
+Bug,Critical,INTERLOK-3331,Metadata keys that resolve to the same value are not emitted in a JSON JOLT Transform,Closed,17/06/2020 10:49,18/06/2020 05:37,Paul Higginson
+Improvement,Normal,INTERLOK-3332,UI - More dependencies upgrade,Closed,17/06/2020 07:10,18/06/2020 01:12,Sebastien Belin
+Story,Normal,INTERLOK-3333,JsonPath on large JSON,Open,18/06/2020 10:25,11/02/2021 03:54,Lewin Chan
+Story,Normal,INTERLOK-3334,eclipse-jgit 5.8.0 breaks vcs-git,Closed,22/06/2020 01:57,28/07/2020 07:19,Lewin Chan
+Story,Normal,INTERLOK-3335,UI - Swagger To Config XML - Upgrade to the latest Openapi (Swagger v3),Closed,22/06/2020 03:54,04/08/2020 07:04,Sebastien Belin
+Story,Normal,INTERLOK-3336,Remove some optional/* files from the the installation,Closed,23/06/2020 02:10,29/07/2020 04:03,Lewin Chan
+Bug,Blocker,INTERLOK-3337,Timing issue with workflow-rest-services,Closed,24/06/2020 02:06,24/06/2020 05:16,Lewin Chan
+Story,Normal,INTERLOK-3338,UI - Salesforce - Update the GetOauthToken template used by the salesforce helper page,Closed,26/06/2020 05:21,22/07/2020 04:34,Sebastien Belin
+Story,Normal,INTERLOK-3339,Archive / Get Rid of deprecated projects,Closed,29/06/2020 04:11,29/07/2020 04:03,Lewin Chan
+Story,Normal,INTERLOK-3340,"Add a ""ClearCache"" Service",Closed,29/06/2020 05:11,29/06/2020 06:30,Lewin Chan
+Bug,Normal,INTERLOK-3341,interlok-hpcc-interop is broken,Closed,29/06/2020 09:41,26/08/2020 02:08,Lewin Chan
+Bug,Normal,INTERLOK-3342,AddMetadataService: Set<MetadataElement> should be LinkedHashSet to force ordering,Closed,29/06/2020 10:26,30/06/2020 03:55,Lewin Chan
+Bug,Normal,INTERLOK-3343,UI Additional files can delete managed files unexpectedly,Closed,01/07/2020 03:20,01/07/2020 03:39,Lewin Chan
+Story,Low,INTERLOK-3344,Condition variant of BranchingServiceEnabler,Open,01/07/2020 04:11,01/07/2020 04:15,Lewin Chan
+Story,Normal,INTERLOK-3345,XA - Default XA resource names to UUID,Closed,02/07/2020 04:22,10/08/2020 06:51,Aaron McGrath
+Story,Normal,INTERLOK-3346,XA Resource name config check,Closed,02/07/2020 04:25,19/08/2020 07:45,Aaron McGrath
+Story,Normal,INTERLOK-3347,Config-Objects - Generate samples,Closed,02/07/2020 05:25,17/09/2020 04:16,Aaron McGrath
+Story,Normal,INTERLOK-3348,Config-(fx)IDE - build the gradle javafx project,Closed,02/07/2020 05:48,25/11/2020 09:33,Paul Higginson
+Story,Normal,INTERLOK-3349,Config-(fx)IDE - initial app framework,Closed,02/07/2020 05:48,25/11/2020 09:33,Paul Higginson
+Story,Normal,INTERLOK-3350,Config-(fx)IDE - initial file explorer/open config,Closed,02/07/2020 05:48,25/11/2020 09:33,Paul Higginson
+Story,Normal,INTERLOK-3351,Config-(fx)IDE - config file editor (initial),Closed,02/07/2020 05:48,25/11/2020 09:33,Paul Higginson
+Story,Normal,INTERLOK-3352,Config-(fx)IDE - properties editor (basic),Closed,02/07/2020 05:48,17/09/2020 03:20,Paul Higginson
+Story,Normal,INTERLOK-3353,Config-(fx)IDE - xml editor (basic),Closed,02/07/2020 05:48,17/09/2020 03:19,Paul Higginson
+Story,Normal,INTERLOK-3354,Config-(fx)IDE - json editor (basic),Closed,02/07/2020 05:48,17/09/2020 03:19,Paul Higginson
+Story,Normal,INTERLOK-3356,Config-(fx)IDE - Add home button to main-toolbar,Closed,02/07/2020 05:48,17/09/2020 03:18,Paul Higginson
+Story,Normal,INTERLOK-3357,Config-IDE - (design/mock) config file editor (topology view),Closed,02/07/2020 05:48,25/11/2020 09:33,Paul Higginson
+Story,Normal,INTERLOK-3358,Config-IDE - design/prototype config editor (settings editor),Closed,02/07/2020 05:48,05/01/2021 02:51,Paul Higginson
+Story,Normal,INTERLOK-3359,Config-(fx)IDE - user preferences,Closed,02/07/2020 05:48,25/11/2020 09:33,Paul Higginson
+Story,Normal,INTERLOK-3360,Config-IDE - design the initial theme to use,Open,02/07/2020 05:49,13/01/2021 03:06,Paul Higginson
+Story,Normal,INTERLOK-3361,JsonSchema Validation should report more detailed exceptions,Closed,08/07/2020 02:46,05/08/2020 04:05,Lewin Chan
+Story,Normal,INTERLOK-3362,Migrate msmq-javonet to gradle,Closed,08/07/2020 05:18,16/07/2020 02:43,Lewin Chan
+Story,Normal,INTERLOK-3363,Migrate SAP build from ant to gradle,Closed,08/07/2020 05:19,28/01/2021 01:42,Lewin Chan
+Story,Normal,INTERLOK-3365,Mark sonic-mf & actional as a deprecated project,Closed,08/07/2020 05:29,19/11/2020 05:07,Lewin Chan
+Bug,Normal,INTERLOK-3366,Interlok - The doc page in the Interlok download page is incorrect,Closed,08/07/2020 06:50,16/07/2020 02:44,Sebastien Belin
+Bug,Normal,INTERLOK-3367,Issue with schema validation,Closed,13/07/2020 12:52,14/07/2020 05:34,Cassie Cox
+Improvement,Normal,INTERLOK-3368,"UI - Dependencies upgrade - bump versions for swagger, swagger-v3, flyway-core, maven-site-plugin, jackson and spotbugs-maven-plugin",Closed,13/07/2020 06:51,03/09/2020 10:37,Sebastien Belin
+Story,Low,INTERLOK-3369,UI Config - extend 'expert' mode in settings editor to allow visibility of null deprecated members,Closed,14/07/2020 06:54,26/07/2020 08:41,Paul Higginson
+Story,Normal,INTERLOK-3370,"GenericOauthToken should have a better default ""metadata filter""",Closed,16/07/2020 05:17,29/07/2020 03:30,Lewin Chan
+Story,Normal,INTERLOK-3371,Add support for JWT,Closed,16/07/2020 07:17,30/07/2020 07:59,Lewin Chan
+Bug,Normal,INTERLOK-3372,Artifact Downloader - Denial of Service,Closed,17/07/2020 02:26,26/08/2020 07:21,Sebastien Belin
+Story,Normal,INTERLOK-3373,JMS consumer - pass the commit code into the message listener as a lambda.,Closed,20/07/2020 05:20,18/08/2020 03:30,Aaron McGrath
+Story,Normal,INTERLOK-3374,Deprecate native WMQ since IBM recommends JMS instead,Closed,20/07/2020 06:52,19/11/2020 02:38,Aaron McGrath
+Story,Normal,INTERLOK-3375,"Difference between ""multiline"" matches: if-then-service matches vs regex-syntax-branching",Open,23/07/2020 04:40,07/09/2020 08:52,Matthew Warman
+Story,Normal,INTERLOK-3376,"ManagementComponentInfo should not contain ""ManagementComponent"" as a member",Closed,27/07/2020 01:35,27/08/2020 02:22,Lewin Chan
+Story,Normal,INTERLOK-3377,XaJmsProducer should extend JmsProducer rather than copy pasta,Closed,27/07/2020 11:20,05/08/2020 04:24,Lewin Chan
+Story,Normal,INTERLOK-3378,Make JSON multi-module,Closed,28/07/2020 01:38,29/09/2020 07:31,Lewin Chan
+Story,Normal,INTERLOK-3379,What's the deal with jakarta.validation-api:3.0.0,Open,28/07/2020 02:27,28/07/2020 02:27,Lewin Chan
+Story,Normal,INTERLOK-3380,UI: optionalComponentsInUse should be sorted to help git history,Closed,28/07/2020 10:48,29/07/2020 01:42,Matthew Warman
+Story,Normal,INTERLOK-3381,Remove items marked for removal in 3.11.0,Closed,29/07/2020 04:27,10/08/2020 06:48,Lewin Chan
+Bug,Normal,INTERLOK-3382,UI: Variable Set order produces different results,Closed,29/07/2020 04:53,01/09/2020 07:02,Matthew Warman
+Bug,Normal,INTERLOK-3383,UI - Configuring XA shows config errors,Closed,29/07/2020 07:54,03/08/2020 07:36,Aaron McGrath
+Bug,Normal,INTERLOK-3384,Assert Xpath Equals returns only a single attribute or element,Open,30/07/2020 10:22,01/12/2020 04:11,Din Stolak
+Improvement,Normal,INTERLOK-3385,"UI Docs - Update documentation regarding start up options (system properties, etc)",Closed,03/08/2020 08:54,04/09/2020 04:28,Paul Higginson
+Bug,Normal,INTERLOK-3386,UI System Property - interlok.ui.disableExternalResources=true appears like it doesn't effect anything,Closed,03/08/2020 08:58,03/08/2020 07:37,Paul Higginson
+Story,Normal,INTERLOK-3387,interlok-elastic: Make uniqueid JSON path resolvable,Closed,03/08/2020 10:45,05/08/2020 09:14,Matthew Warman
+Story,Normal,INTERLOK-3388,webservice-cxf needs to be fully mocked,Open,04/08/2020 06:49,24/09/2020 02:40,Lewin Chan
+Improvement,Normal,INTERLOK-3389,UI - Bump swagger-v3.version from 2.1.3 to 2.1.4,Closed,04/08/2020 07:07,04/08/2020 07:57,Sebastien Belin
+Story,Normal,INTERLOK-3390,UI: Channel/Workflow in deprecation warning isn't required.,Closed,05/08/2020 02:42,07/08/2020 04:20,Lewin Chan
+Story,Normal,INTERLOK-3391,UI Config - upgrade comments modal to allow markdown input to be previewed.,Closed,06/08/2020 04:58,14/08/2020 03:37,Paul Higginson
+Bug,Normal,INTERLOK-3392,RetryMessageHandler removes success/failure callbacks,Closed,06/08/2020 08:38,19/08/2020 07:53,Aaron McGrath
+Bug,Low,INTERLOK-3393,BranchingHttpRequestService requires a DefaultServiceId but it is not marked as required,Closed,06/08/2020 10:07,12/08/2020 02:06,Dave Hayward
+Story,Normal,INTERLOK-3394,Upgrade cluster-manager to use jgroups 5.x,Open,10/08/2020 04:10,10/08/2020 04:11,Lewin Chan
+Story,Normal,INTERLOK-3395,"JsonSchema ""isn't strict enough"" in some cases",Closed,12/08/2020 01:54,17/08/2020 01:40,Lewin Chan
+Bug,Normal,INTERLOK-3396,"Using StandaloneRequestor->Apache HTTP producer with response handler factory -> metadata, empties the AdaptrisMessage payload",Closed,12/08/2020 08:26,17/08/2020 01:40,Dave Hayward
+Story,Low,INTERLOK-3397,UI Config - Improve shared-service component 'Lookup Name' input,Closed,13/08/2020 03:13,14/08/2020 07:30,Paul Higginson
+Story,Normal,INTERLOK-3398,#NAME?,Closed,13/08/2020 03:34,17/08/2020 07:15,Lewin Chan
+Bug,Normal,INTERLOK-3399,UI Config - settings error when using StandaloneProducer with a shared connection,Closed,13/08/2020 10:34,16/08/2020 07:18,Paul Higginson
+Story,Low,INTERLOK-3400,UI Config - validate if the lookup name in a shared-service component exists,Closed,14/08/2020 03:29,17/08/2020 02:45,Paul Higginson
+Story,Lowest,INTERLOK-3401,"UI Config - Improve 'add component' list, so when filtering by 'shared' then shared-components are listed first",Closed,14/08/2020 03:32,19/10/2020 04:54,Paul Higginson
+Bug,Normal,INTERLOK-3402,Artifact Downloader - XML Entity Expansion,Closed,16/08/2020 07:17,16/08/2020 10:13,Sebastien Belin
+Story,Normal,INTERLOK-3403,Upgrade things from mockito:1.10.19 to mockito-core:3,Closed,17/08/2020 02:12,12/01/2021 05:13,Lewin Chan
+Story,Normal,INTERLOK-3404,startQuietly=false doesn't kill the JVM,Closed,17/08/2020 02:56,17/08/2020 09:46,Lewin Chan
+Story,Normal,INTERLOK-3405,Add new setting to JettyConsumer to use default encoding,Closed,17/08/2020 06:44,18/08/2020 02:12,Lewin Chan
+Story,Normal,INTERLOK-3406,Config-IDE - Initial Web IDE gradle build files and startup files,Closed,19/08/2020 01:13,25/11/2020 09:33,Sebastien Belin
+Story,Normal,INTERLOK-3407,Restful service to allow Prometheus to scrape metrics,Closed,19/08/2020 06:09,24/08/2020 11:00,Aaron McGrath
+Bug,Normal,INTERLOK-3408,Monitor-agent overwrites existing ActivityMaps,Closed,19/08/2020 06:41,24/08/2020 10:04,Aaron McGrath
+Bug,Normal,INTERLOK-3409,UI: Dependency Violation - jquery 3.4.1 and hibernate-core-5.4.17,Closed,19/08/2020 07:34,20/08/2020 07:52,Matthew Warman
+Story,Normal,INTERLOK-3410,UI - Upgrade knockout.js and C3.js,Closed,20/08/2020 07:32,25/08/2020 07:42,Sebastien Belin
+Story,Normal,INTERLOK-3411,Update the Profiler produce cut-points,Closed,24/08/2020 09:36,25/08/2020 06:19,Aaron McGrath
+Bug,Normal,INTERLOK-3412,Profiling monitor agent doesn't handle nested services,Closed,24/08/2020 01:22,25/08/2020 02:28,Aaron McGrath
+Bug,Normal,INTERLOK-3413,UI - Disable URL Rewrite in Jetty for the session ID.,Closed,24/08/2020 08:15,25/08/2020 02:25,Sebastien Belin
+Story,Normal,INTERLOK-3414,Profiler - producer request method,Closed,25/08/2020 06:19,25/08/2020 10:21,Aaron McGrath
+Story,Normal,INTERLOK-3415,JCSMP - Alternative authentication,Closed,25/08/2020 06:23,22/10/2020 07:23,Aaron McGrath
+Story,Normal,INTERLOK-3416,Increase coverage if real jms tests are disabled,In Progress,25/08/2020 06:33,25/01/2021 05:20,Lewin Chan
+Story,Normal,INTERLOK-3417,JCSMP - Transaction handling,Closed,25/08/2020 08:48,27/10/2020 06:22,Aaron McGrath
+Story,Normal,INTERLOK-3418,JmsAsyncProducer,Closed,25/08/2020 09:36,28/08/2020 10:12,Aaron McGrath
+Improvement,Normal,INTERLOK-3419,UI: Deprecation warnings don't link to nested items,Open,26/08/2020 03:42,26/08/2020 03:46,Lewin Chan
+Story,Normal,INTERLOK-3420,Jms consumer synchronous mode,Closed,26/08/2020 06:03,02/09/2020 04:07,Aaron McGrath
+Story,Normal,INTERLOK-3421,Jcsmp message translators,Closed,26/08/2020 12:26,03/09/2020 07:53,Aaron McGrath
+Story,Critical,INTERLOK-3422,Document using Gradle to build an Interlok installation,Closed,26/08/2020 01:37,03/02/2021 04:09,Aaron McGrath
+Bug,Normal,INTERLOK-3423,Artifact Downloader - XML Entity Expansion,Closed,26/08/2020 07:21,26/08/2020 07:43,Sebastien Belin
+Story,Normal,INTERLOK-3424,Improve performance of PoolingSplitJoin for large splits,Closed,27/08/2020 01:31,06/10/2020 01:47,Lewin Chan
+Story,Normal,INTERLOK-3425,Improve performance for pooling-splitter when wait-while-busy=true,Closed,27/08/2020 05:00,02/09/2020 05:36,Lewin Chan
+Story,Normal,INTERLOK-3426,CSV to JSON_LINES service,Closed,03/09/2020 02:20,22/09/2020 06:33,Lewin Chan
+Story,Normal,INTERLOK-3427,JSON_ARRAY to JSON_LINES (and vice-versa).,Closed,03/09/2020 03:01,19/11/2020 02:13,Lewin Chan
+Bug,Normal,INTERLOK-3428,Odd timeout causing slow startup speed,Closed,04/09/2020 09:17,07/09/2020 02:06,Lewin Chan
+Story,Normal,INTERLOK-3429,UI Templates - Update templates so they don't use deprecated members,Closed,08/09/2020 07:38,09/09/2020 10:01,Sebastien Belin
+Improvement,Normal,INTERLOK-3430,UI FX Installer - Using system prop -Dinterlok.version when running installer is not supported,Closed,08/09/2020 10:33,09/09/2020 04:10,Sebastien Belin
+Bug,Normal,INTERLOK-3431,Interlok Shell - The dashboard command does not work,Closed,09/09/2020 04:27,01/12/2020 06:25,Sebastien Belin
+Bug,Normal,INTERLOK-3432,ExternalResolver isn't thread-safe under heavy load,Closed,10/09/2020 02:43,10/09/2020 07:49,Lewin Chan
+Bug,Normal,INTERLOK-3433,FileInputParameter fails under load,Closed,10/09/2020 02:47,10/09/2020 07:49,Lewin Chan
+Bug,Normal,INTERLOK-3434,Packaging issues with com.adaptris.core.Resolver,Closed,10/09/2020 05:25,24/09/2020 08:30,Lewin Chan
+Bug,Normal,INTERLOK-3435,Jsonpath currently text value nodes only,Closed,10/09/2020 06:19,10/09/2020 08:32,Din Stolak
+Improvement,Low,INTERLOK-3436,Update resolvable expressions Jsonpath documentation,Closed,10/09/2020 06:22,15/10/2020 05:54,Din Stolak
+Bug,Normal,INTERLOK-3437,--configcheck shared component checker doesn't support pre-processors,Closed,14/09/2020 07:54,16/09/2020 02:12,Lewin Chan
+Bug,Normal,INTERLOK-3438,variable substitution infinite loop,Closed,14/09/2020 07:56,19/11/2020 02:39,Lewin Chan
+Story,Normal,INTERLOK-3439,"JDK 11 : Nashorn deprecated, has gone away in JDK 15",In Progress,16/09/2020 06:49,16/02/2021 03:06,Lewin Chan
+Story,Normal,INTERLOK-3440,Create a builder for get-and-cache-oauth-token service for json payload with custom headers from metadata,Closed,16/09/2020 10:28,28/09/2020 05:02,Juan Romero
+Story,Normal,INTERLOK-3441,Config-IDE - user preferences,Open,17/09/2020 03:15,13/01/2021 02:54,Paul Higginson
+Story,Normal,INTERLOK-3442,Config-IDE - improve the users admin pages/features,Closed,17/09/2020 03:22,25/11/2020 09:29,Paul Higginson
+Story,Normal,INTERLOK-3443,Config-IDE - build a delivery artifact from the config project,Open,17/09/2020 03:25,13/01/2021 04:45,Paul Higginson
+Story,Normal,INTERLOK-3444,WMQ - Implement latest native API ,Closed,17/09/2020 04:03,12/11/2020 02:57,Aaron McGrath
+Story,Normal,INTERLOK-3445,jetty default behaviour should be applied to programmatic root contexts.,Open,17/09/2020 05:15,13/01/2021 04:45,Lewin Chan
+Improvement,Normal,INTERLOK-3446,Switch JDBC tests to be Assume.assumeTrue,Closed,21/09/2020 07:18,21/09/2020 10:12,Lewin Chan
+Story,Normal,INTERLOK-3447,"GenericOauthToken should propagate the ""http code""",Closed,23/09/2020 01:41,28/09/2020 05:02,Lewin Chan
+Story,Normal,INTERLOK-3448,JCSMP - Configurable ack window,Open,23/09/2020 07:40,01/12/2020 04:09,Aaron McGrath
+Improvement,Normal,INTERLOK-3449,"UI - Upgrade xtream, common-io, snakeyaml, mockito and maven dependency-check",Closed,24/09/2020 07:31,24/09/2020 08:40,Sebastien Belin
+Bug,Normal,INTERLOK-3450,ALTPW: password variant should be marked as deprecated,Closed,29/09/2020 08:26,08/10/2020 05:53,Lewin Chan
+Bug,Low,INTERLOK-3451,LGTM: Remove use of SHA-1 in InlineKeystoreLocation,Open,29/09/2020 08:32,01/12/2020 04:11,Lewin Chan
+Story,Normal,INTERLOK-3452,Config-IDE - Add Channels and Workflows tabs in the config editor,Closed,30/09/2020 01:44,25/11/2020 09:40,Sebastien Belin
+Story,Normal,INTERLOK-3453,Config-IDE - Use diagram-js as the base of the config editor flow components d&d system,Closed,30/09/2020 01:47,25/11/2020 09:40,Sebastien Belin
+Story,Normal,INTERLOK-3454,Config-IDE - Make a searchable diagram-js palette,Closed,30/09/2020 01:49,25/11/2020 09:40,Sebastien Belin
+Bug,Normal,INTERLOK-3455,JMS Creating durable subscriber with subscription name.,Closed,30/09/2020 10:34,01/10/2020 03:21,Aaron McGrath
+Story,Normal,INTERLOK-3456,Unit tests - Embedded brokers,Closed,01/10/2020 03:17,09/11/2020 05:06,Aaron McGrath
+Story,Normal,INTERLOK-3457,JSLT - JSON Query and Transformation Language,Open,01/10/2020 04:50,10/02/2021 06:33,Lewin Chan
+Bug,Normal,INTERLOK-3458,Wrong GUI validation of Idoc Producer against Idoc consume connection instead of Idoc produce connection ,Closed,01/10/2020 09:54,08/10/2020 03:47,Juan Romero
+Bug,Low,INTERLOK-3459,Green percent sign not displayed in GUI for field lookup-name within dynamic-shared-service,Closed,01/10/2020 12:18,13/10/2020 02:09,Juan Romero
+Improvement,Normal,INTERLOK-3460,Xpath Service doesn't support attribute nodes,Closed,02/10/2020 10:17,15/10/2020 06:09,Din Stolak
+Bug,Normal,INTERLOK-3461,FileFilterBuilder doesnt' support Filters with default constructors.,Closed,05/10/2020 02:36,13/10/2020 05:46,Lewin Chan
+Bug,Normal,INTERLOK-3462,Alternative password styles are not supported by the UI,Closed,06/10/2020 02:04,16/11/2020 04:03,Lewin Chan
+Story,Normal,INTERLOK-3463,Connect to Azure Datalake,Closed,06/10/2020 07:21,25/11/2020 09:26,Rauf Butt
+Improvement,Normal,INTERLOK-3464,UI: Bump flyway to 7.0.2,Closed,08/10/2020 06:08,13/10/2020 07:55,Lewin Chan
+Story,Normal,INTERLOK-3465,REST based triggered failed message retrier,Closed,13/10/2020 04:57,09/11/2020 05:05,Lewin Chan
+Story,Normal,INTERLOK-3466,Config-IDE - improve the home page/features,Closed,14/10/2020 09:36,25/11/2020 09:40,Paul Higginson
+Story,Normal,INTERLOK-3467,org.apache.httpcomponents.client5:httpclient5 is now a thing.,Open,14/10/2020 12:32,11/02/2021 03:55,Lewin Chan
+Story,Normal,INTERLOK-3468,Promote 'interlok-manual' as the formal documentation page.,Closed,15/10/2020 02:51,10/11/2020 03:10,Lewin Chan
+Improvement,Normal,INTERLOK-3469,UI - Bump junit from 4.13 to 4.13.1,Closed,18/10/2020 07:43,18/10/2020 08:07,Sebastien Belin
+Improvement,Normal,INTERLOK-3470,UI Component Search Indexer - ensure interlok-pdf is indexed,Closed,20/10/2020 04:48,01/12/2020 04:49,Paul Higginson
+Bug,Normal,INTERLOK-3471,UI - Importing widgets in the runtime page doesn't save them if nothing else is done in the page,Closed,21/10/2020 02:13,22/10/2020 04:33,Sebastien Belin
+Story,Normal,INTERLOK-3472,Conditional loops - StopProcessingService,Closed,21/10/2020 07:32,02/11/2020 08:50,Aaron McGrath
+Story,Normal,INTERLOK-3473,Tidy up the solace project,Closed,21/10/2020 10:15,02/11/2020 08:50,Aaron McGrath
+Story,Normal,INTERLOK-3474,interlok-mail: send-email-attachment should allow body contentType to be set,Closed,22/10/2020 06:57,05/11/2020 03:45,Matthew Warman
+Improvement,Normal,INTERLOK-3475,"UI - Bump hibernate-validator to 6.1.6.Final, flyway-core to 7.0.4, commons-pool2 to 2.9.0 and javax.el to 3.0.1-b12",Closed,22/10/2020 07:54,22/10/2020 08:30,Sebastien Belin
+Improvement,Normal,INTERLOK-3476,UI - Upgrade gridstack.js and d3.js,Closed,22/10/2020 08:51,22/10/2020 09:07,Sebastien Belin
+Bug,Normal,INTERLOK-3477,UI - The Generate Services button from the DysnamicServiceLocator is not available for the DysnamicServiceExecutor,Closed,22/10/2020 09:05,22/10/2020 10:38,Sebastien Belin
+Improvement,Normal,INTERLOK-3478,UI - Upgrade raphael.js to 2.3.0,Closed,22/10/2020 10:39,25/10/2020 08:29,Sebastien Belin
+Story,Normal,INTERLOK-3479,Config-IDE - Clean the diagram bpmn code,Closed,26/10/2020 03:03,25/11/2020 09:39,Sebastien Belin
+Story,Normal,INTERLOK-3480,jakarta.mail / jakarta.activation migration to 2.0.0,Open,26/10/2020 04:48,13/01/2021 03:04,Lewin Chan
+Story,Normal,INTERLOK-3481,Google pubsub GRPC upgrade breaks.,Closed,26/10/2020 06:07,02/12/2020 02:51,Lewin Chan
+Story,Low,INTERLOK-3482,Impact of upgrading xerces,Open,26/10/2020 06:35,04/11/2020 07:02,Lewin Chan
+Improvement,Normal,INTERLOK-3483,"UI - Upgrade to jetty 9.4.33.v20201020, Mockito 3.5.15 and Swagger v3 to 2.1.5",Closed,27/10/2020 12:59,27/10/2020 02:30,Sebastien Belin
+Bug,Normal,INTERLOK-3484,Json validator dups,Closed,30/10/2020 08:08,19/11/2020 05:20,Aaron McGrath
+Story,Normal,INTERLOK-3485,Test:  XSLT 2/3 - And multi-payload,Closed,03/11/2020 10:05,01/12/2020 08:24,Aaron McGrath
+Improvement,Normal,INTERLOK-3486,UI - Upgrade shiro to 1.7.0 and flyway to 7.1.1,Closed,03/11/2020 07:17,03/11/2020 08:44,Sebastien Belin
+Story,Normal,INTERLOK-3487,Create an azure/jclouds/blobstorage variant of retry-store,Open,04/11/2020 07:50,18/01/2021 10:17,Lewin Chan
+Story,Normal,INTERLOK-3488,Config-IDE - Hide location when adding a new project in remote ide mode.,Closed,05/11/2020 12:52,25/11/2020 09:39,Sebastien Belin
+Non Development Task,Lowest,INTERLOK-3489,Enable weekly-builds in nexus for all components,Closed,05/11/2020 01:57,25/11/2020 09:38,Lewin Chan
+Bug,Normal,INTERLOK-3490,PluggableJdbcConnection + HikariCP fails to pass configuration checks,Closed,05/11/2020 04:36,09/11/2020 05:05,Lewin Chan
+Improvement,Normal,INTERLOK-3491,Double deprecation warning reporting in DeprecationChecker,Closed,05/11/2020 11:14,11/11/2020 03:09,Lewin Chan
+Improvement,Normal,INTERLOK-3492,UI - update links so they all point to the correct (new) documentation pages,Closed,09/11/2020 04:26,12/11/2020 01:06,Paul Higginson
+Improvement,Low,INTERLOK-3493,US style Date formatting (interlok-docs docsify),Closed,09/11/2020 05:44,09/11/2020 07:02,Lewin Chan
+Non Development Task,Normal,INTERLOK-3494,Put dev-vm03 website into gitlab,Open,09/11/2020 09:21,09/11/2020 09:21,Lewin Chan
+Improvement,Normal,INTERLOK-3495,UI - Upgrade jetty to 9.4.34.v20201102,Closed,09/11/2020 07:48,12/11/2020 01:06,Sebastien Belin
+Improvement,Normal,INTERLOK-3496,Doc - Add docs about the new ConfigDeprecated annotation,Closed,09/11/2020 08:17,09/11/2020 09:01,Sebastien Belin
+Story,Normal,INTERLOK-3497,Extend interlok-verify-report to use available ConfigurationCheckers,Closed,10/11/2020 09:37,09/12/2020 06:55,Lewin Chan
+Non Development Task,Normal,INTERLOK-3498,Interlok Docs - redirect interlok-docs/changelog.html to interlok-docs/#/pages/overview/changelog,Closed,11/11/2020 04:44,23/11/2020 03:02,Paul Higginson
+Bug,Low,INTERLOK-3499,interlok-docs build fails in gh-pages because {% include },Closed,11/11/2020 05:26,11/11/2020 06:14,Lewin Chan
+Non Development Task,Critical,INTERLOK-3500,travis-ci -> github actions for codecov.io,Closed,11/11/2020 10:41,01/12/2020 06:26,Lewin Chan
+Story,Normal,INTERLOK-3501,Add a new listener to JettyRetry that allows delete,Closed,12/11/2020 03:00,16/11/2020 05:38,Lewin Chan
+Story,Normal,INTERLOK-3502,Update docker-interlok-template to use parent gradle,Closed,12/11/2020 08:34,25/11/2020 09:38,Lewin Chan
+Bug,Normal,INTERLOK-3503,UI - varsub infinite loop,Closed,12/11/2020 08:50,16/11/2020 03:45,Sebastien Belin
+Story,Normal,INTERLOK-3504,MessageListener -> functional interface,Open,13/11/2020 05:57,01/12/2020 04:25,Aaron McGrath
+Bug,Low,INTERLOK-3505,"FtpSslConnection can't connect to ""modern"" ftp servers",Open,16/11/2020 09:35,16/11/2020 09:48,Lewin Chan
+Story,Low,INTERLOK-3506,Investigate Interlok Plugin for Backstage.io,Open,18/11/2020 12:33,25/01/2021 05:20,Aaron McGrath
+Improvement,Normal,INTERLOK-3507,Migrate interlok-cxf to not use testbed.adaptris.net,Closed,19/11/2020 09:00,19/11/2020 11:10,Lewin Chan
+Story,Normal,INTERLOK-3508,ConfigChecker - SharedComponents doesn't support nested services,Closed,23/11/2020 01:45,23/11/2020 08:15,Lewin Chan
+Story,Normal,INTERLOK-3509,Support JSON_LINES as output method for completeness,Closed,25/11/2020 02:14,16/02/2021 02:54,Lewin Chan
+Non Development Task,Normal,INTERLOK-3510,SNYK does not handle variables + dependencies from multi-module parents,Closed,26/11/2020 05:21,02/12/2020 11:30,Lewin Chan
+Story,Normal,INTERLOK-3511,interlok-aws-s3: Add the ability to set the objectAcl on upload operation ,Closed,30/11/2020 05:30,02/12/2020 01:37,Matthew Warman
+Story,Normal,INTERLOK-3512,UI Version Upgrade - update Bootstrap select and tour to latest version,Closed,01/12/2020 01:01,13/12/2020 06:43,Sebastien Belin
+Story,Normal,INTERLOK-3513,Config-IDE - Config diagram should be able to load from a json config and generate a json config,Open,01/12/2020 01:23,13/01/2021 12:13,Sebastien Belin
+Story,Low,INTERLOK-3515,change input/output service to change char encoding,Closed,01/12/2020 04:33,01/12/2020 05:38,Paul Higginson
+Story,Normal,INTERLOK-3516,Investigate open-telemetry,In Progress,01/12/2020 04:41,05/02/2021 09:58,Aaron McGrath
+Non Development Task,Normal,INTERLOK-3517,Mark AS2 as deprecated,Closed,01/12/2020 05:56,01/12/2020 06:24,Lewin Chan
+Story,Normal,INTERLOK-3518,Alias'ing Key Value pairs in config/UI,Open,01/12/2020 07:42,13/01/2021 04:46,Aaron McGrath
+Bug,Normal,INTERLOK-3519,interlok-mail github actions failing.,Closed,02/12/2020 11:30,03/12/2020 06:46,Lewin Chan
+Improvement,Normal,INTERLOK-3520,UI - Bump jetty to 9.4.35.v20201120 jackson to 2.12.1 and flyway to 7.3.0,Closed,02/12/2020 06:19,12/01/2021 03:36,Sebastien Belin
+Improvement,Normal,INTERLOK-3521,UI - Bump maven-resources-plugin from 3.1.0 to 3.2.0,Closed,02/12/2020 07:57,02/12/2020 09:39,Sebastien Belin
+Story,Normal,INTERLOK-3522,Bump Saxon from 9.9.1-7 to 10+,Closed,03/12/2020 09:42,03/12/2020 10:17,Lewin Chan
+Story,Normal,INTERLOK-3523,Artifact Downloader - Clean build.gradle and update to Junit 5,Closed,03/12/2020 07:13,09/12/2020 03:27,Sebastien Belin
+Story,Normal,INTERLOK-3524,License should also have a ConfigurationChecker,In Progress,08/12/2020 01:44,13/01/2021 04:31,Lewin Chan
+Story,Normal,INTERLOK-3525,Add support STS for AWS credentials to assume IAM roles,Closed,08/12/2020 08:54,11/01/2021 08:53,Gerco Dries
+Story,Normal,INTERLOK-3526,Add unique-id to javax.validation.checker output,Closed,09/12/2020 03:45,09/12/2020 04:59,Lewin Chan
+Bug,Normal,INTERLOK-3527,StandardHttpProducer - NPE,Closed,09/12/2020 08:14,09/12/2020 09:13,Aaron McGrath
+Improvement,Normal,INTERLOK-3528,Possible performance bottleneck in creation of new XPath instances,Closed,09/12/2020 10:38,05/01/2021 03:39,Gerco Dries
+Non Development Task,Low,INTERLOK-3529,lombok plugin needs findbugs annotations.,Open,10/12/2020 03:42,10/12/2020 03:58,Lewin Chan
+Story,Normal,INTERLOK-3530,"UI - Bump flyway-core from to 7.3.2, hibernate-validator to 6.1.7.Final and swagger-v3 to 2.1.6",Closed,13/12/2020 07:48,03/01/2021 07:04,Sebastien Belin
+Bug,Normal,INTERLOK-3531,interlok-cache - Upgrade jackson and httpclient in apache-geode,Closed,14/12/2020 03:35,14/12/2020 03:41,Sebastien Belin
+Story,Normal,INTERLOK-3532,interlok-service-tester-wiremock: When using helper wiremock tests take a long time to complete,Closed,14/12/2020 09:44,15/12/2020 03:41,Matthew Warman
+Story,Normal,INTERLOK-3533,interlok-service-tester-wiremock: Wiremock helper doesn't use service.tester.working.directory,Closed,14/12/2020 09:45,15/12/2020 03:41,Matthew Warman
+Improvement,Normal,INTERLOK-3534,UI - Bump spring to 4.3.30 and hibernate to 5.4.25.Final,Closed,14/12/2020 09:57,15/12/2020 12:55,Sebastien Belin
+Story,Normal,INTERLOK-3535,UI Service Tester - Wiremock testcase doesn't work when using port property.,Closed,15/12/2020 03:44,14/02/2021 06:11,Matthew Warman
+Story,Normal,INTERLOK-3536,UI Service Tester - Look to expose embedded-jmx-test-client features,Open,15/12/2020 04:13,10/02/2021 03:47,Matthew Warman
+Bug,Low,INTERLOK-3537,PAS consumer still seems to require 'durable' flag to be set even with a subscription ID,Closed,16/12/2020 07:33,11/01/2021 08:53,James Wickham
+Story,Normal,INTERLOK-3538,Workflow Rest Service - Definition yaml file always return http for the servers url even when using https,In Progress,17/12/2020 08:46,10/02/2021 02:33,Sebastien Belin
+Bug,Normal,INTERLOK-3539,JRuby - Fix failing build because of CVE-2020-28052,Closed,03/01/2021 07:09,03/01/2021 08:51,Sebastien Belin
+Improvement,Normal,INTERLOK-3540,JRuby - Remove OWASP suppress for CVE-2020-28052,Open,03/01/2021 07:35,06/01/2021 02:10,Sebastien Belin
+Improvement,Normal,INTERLOK-3541,Core - Upgrade good.cer to fix TestCertificateHandler > testGoodCertificateExpiry,Closed,03/01/2021 08:50,05/01/2021 04:59,Sebastien Belin
+Story,Normal,INTERLOK-3542,Bump json-path to 2.5.0,Open,05/01/2021 04:49,10/02/2021 11:50,Lewin Chan
+Story,Normal,INTERLOK-3543,Add payload services,Open,05/01/2021 08:41,13/01/2021 04:47,Aaron McGrath
+Bug,Low,INTERLOK-3544,ExtendedCopyOperation is broken when testing against localstack,Closed,06/01/2021 06:59,11/01/2021 08:53,Lewin Chan
+Story,Normal,INTERLOK-3545,Extend ConfigDeprecated annotation with replacement class / member,Open,06/01/2021 08:33,06/01/2021 08:35,Lewin Chan
+Story,Normal,INTERLOK-3546,UI Config - (whole config) validation reporter links need to be more intelligent (by taking user directly to field),Open,06/01/2021 08:35,06/01/2021 08:46,Paul Higginson
+Story,Low,INTERLOK-3547,Github flavoured markdown doesn't do syntax highlighting,Open,06/01/2021 09:02,06/01/2021 09:02,Lewin Chan
+Story,Normal,INTERLOK-3548,"Standardise on the ""short name"" in terms of convention",In Progress,07/01/2021 10:32,16/02/2021 04:15,Lewin Chan
+Improvement,Normal,INTERLOK-3549,"UI - Bump jersey to 2.33, bouncycastle to 1.68, xerces to 2.12.1 and mockito to 3.7.0",Closed,07/01/2021 06:48,07/01/2021 07:05,Sebastien Belin
+Improvement,Normal,INTERLOK-3550,Update components that are Deprecated for the 3.12.0 release to be Deprecated for 4.0.0 release,Closed,11/01/2021 07:13,13/01/2021 09:59,Paul Higginson
+Story,Normal,INTERLOK-3551,New PW: alternative required ,Closed,12/01/2021 02:59,09/02/2021 05:49,Lewin Chan
+Story,Normal,INTERLOK-3552,Upgrade interlok-xa from mockito:1.10.19 to mockito-core:3,Closed,12/01/2021 05:09,27/01/2021 02:46,Sebastien Belin
+Bug,Low,INTERLOK-3553,Copyright date is incorrect,Closed,12/01/2021 06:24,13/01/2021 03:09,Ashley Anderson
+Bug,Normal,INTERLOK-3554,Active adapter config is not auto-loaded,Closed,12/01/2021 08:53,12/01/2021 09:08,Ashley Anderson
+Story,Normal,INTERLOK-3555,Optional component url in the pom file point to the wrong doc pages,Closed,12/01/2021 08:48,20/01/2021 12:47,Sebastien Belin
+Story,Normal,INTERLOK-3556,UI Version Upgrade - Update gridtsack to a later version,Closed,13/01/2021 12:12,01/02/2021 04:50,Sebastien Belin
+Story,Normal,INTERLOK-3557,Config-IDE - Add tests for the home/user pages ,Open,13/01/2021 03:53,13/01/2021 03:53,Paul Higginson
+Story,Normal,INTERLOK-3558,Remove/Exclude Optional Components that are deprecated (and marked 'be removed interlok 4.0'),Closed,13/01/2021 05:39,10/02/2021 11:07,Paul Higginson
+Story,Normal,INTERLOK-3559,Remove config elements/components that are Deprecated for the 4.0.0 release,Open,13/01/2021 05:45,13/01/2021 05:45,Paul Higginson
+Story,Normal,INTERLOK-3560,Create a Jolokia management component that will eventually replace the JMXMP connector,Closed,13/01/2021 06:05,10/02/2021 03:55,Paul Higginson
+Story,Normal,INTERLOK-3561,PoolingWorkflow that doesn't have a ThreadPool,Closed,13/01/2021 10:11,20/01/2021 07:44,Lewin Chan
+Bug,Normal,INTERLOK-3562,UI Config - Settings Editor Change Type dropdown take all modal width instead of just half,Closed,13/01/2021 07:08,13/01/2021 08:22,Sebastien Belin
+Story,Normal,INTERLOK-3563,JavaFx Installer - Switch to the Java11 version of the installer and make sure it still works,Closed,13/01/2021 07:32,16/02/2021 03:05,Sebastien Belin
+Story,Critical,INTERLOK-3564,Installer changes update (no-installanywhere),Open,14/01/2021 01:53,14/01/2021 01:53,Lewin Chan
+Bug,Normal,INTERLOK-3565,Fix Documentation links,Closed,18/01/2021 01:59,25/01/2021 04:45,Lewin Chan
+Story,Normal,INTERLOK-3566,Remove the deprecated produce-destination / consume-destination,In Progress,19/01/2021 08:14,08/02/2021 04:13,Paul Higginson
+Story,Normal,INTERLOK-3567,Replace the object metadata features of JmsReplyToDestination,In Progress,19/01/2021 08:22,17/02/2021 07:33,Paul Higginson
+Story,Normal,INTERLOK-3568,JavaFx Installer - allow user to select non-interlok jars as part of the install,Open,19/01/2021 08:28,08/02/2021 11:38,Paul Higginson
+Story,Low,INTERLOK-3569,"Doc Section/Page Request: ""AWS Cookbook Guide""",Open,19/01/2021 08:32,19/01/2021 08:32,Paul Higginson
+Story,Normal,INTERLOK-3570,UI - Test the ui database switch using a MariaDB ,Closed,19/01/2021 08:37,19/01/2021 07:06,Paul Higginson
+Story,Normal,INTERLOK-3571,interlok-workflow-rest-services should become a multi-module,Closed,20/01/2021 07:44,03/02/2021 04:09,Lewin Chan
+Bug,Normal,INTERLOK-3572,NPE - DefinedJmsProducer,Resolved,20/01/2021 11:30,03/02/2021 04:12,Aaron McGrath
+Improvement,Normal,INTERLOK-3573,XML Services should be using a restricted document factory by default,Open,20/01/2021 11:31,10/02/2021 11:08,Gerco Dries
+Story,Normal,INTERLOK-3574,Prometheus JVM Metrics ,Resolved,25/01/2021 03:09,16/02/2021 07:03,Matthew Warman
+Story,Normal,INTERLOK-3575,Promethes Metrics Structure,Resolved,25/01/2021 03:13,16/02/2021 07:03,Matthew Warman
+Story,Normal,INTERLOK-3576,UI - embedded javadocs tooltips not working in v4,Closed,25/01/2021 10:51,15/02/2021 03:22,Paul Higginson
+Story,Normal,INTERLOK-3577,Javadocs -  (post v4) re-enable the UML doclets section of the javadocs,Open,25/01/2021 11:04,10/02/2021 11:09,Paul Higginson
+Improvement,Normal,INTERLOK-3578,Azure Datalake create directory hierarchy when uploading,Closed,26/01/2021 05:02,15/02/2021 08:56,Ashley Anderson
+Story,Normal,INTERLOK-3579,Interlok AWS - Update/Branch AWS projects so the use the AWS SDK for Java 2.x,Open,27/01/2021 05:26,27/01/2021 05:26,Paul Higginson
+Bug,Critical,INTERLOK-3580,Deprecation of JDBC Test Statement was done badly.,Closed,27/01/2021 06:47,03/02/2021 06:34,Lewin Chan
+Story,Normal,INTERLOK-3581,New Documentation section that is a Walkthrough,Open,27/01/2021 10:27,27/01/2021 10:28,Lewin Chan
+Story,Normal,INTERLOK-3582,"UI - Upgrade jetty to 9.4.36.v20210114, flyway to 7.5.2, mockito to 3.7.7 and spotbug to 4.2.0",Closed,27/01/2021 07:31,01/02/2021 04:50,Sebastien Belin
+Story,Normal,INTERLOK-3583,Verify SAP (+dll) works on Java 11,Closed,28/01/2021 01:43,09/02/2021 05:20,Lewin Chan
+Technical task,Normal,INTERLOK-3584,Archive / Get Rid of deprecated projects,Closed,28/01/2021 06:18,10/02/2021 11:07,Lewin Chan
+Story,Normal,INTERLOK-3585,Deprecate the interlok-vcs-subversion project,Open,28/01/2021 06:30,28/01/2021 07:15,Paul Higginson
+Improvement,Normal,INTERLOK-3586,Variodoc - dependencies added for java11 need checking/updating,Closed,28/01/2021 10:23,16/02/2021 04:18,Paul Higginson
+Story,Normal,INTERLOK-3587,Prometheus Profiler Metrics Storage,In Progress,29/01/2021 11:37,16/02/2021 07:05,Matthew Warman
+Story,Normal,INTERLOK-3588,FtpConsumer - Add the posibility to consume files from subfolders,Open,01/02/2021 07:20,01/02/2021 07:20,Sebastien Belin
+Improvement,Normal,INTERLOK-3589,UI Component Search Indexer - ensure indexer works with the v4 javadocs,Closed,03/02/2021 03:50,14/02/2021 11:07,Paul Higginson
+Story,Normal,INTERLOK-3590,UI - Support the new PW password encoding in the config page,Closed,03/02/2021 03:56,15/02/2021 03:37,Sebastien Belin
+Story,Normal,INTERLOK-3591,Interlok XA - Bump ibm mq to 9.1.5.0 to fix vulnerability,Closed,08/02/2021 03:48,08/02/2021 04:22,Sebastien Belin
+Improvement,Normal,INTERLOK-3592,Interlok XA WMQ - fix vulnerability with IBM MQ (CVE-2020-4682),Closed,08/02/2021 03:49,08/02/2021 03:51,Paul Higginson
+Improvement,Normal,INTERLOK-3593,"Doc Section/Page Request: ""HTTPS cookbook""",Open,08/02/2021 05:03,08/02/2021 05:04,Paul Higginson
+Improvement,Normal,INTERLOK-3594,Failover - update language used in project (master/slave to primary/secondary),Closed,09/02/2021 04:20,15/02/2021 05:26,Paul Higginson
+Bug,Normal,INTERLOK-3595,BAPI Producer does not work inside a RFC Servicelist,In Progress,09/02/2021 05:03,16/02/2021 04:02,Lewin Chan
+Technical task,Normal,INTERLOK-3596,docker snapshot images should be baselined on java 11,Closed,09/02/2021 06:51,09/02/2021 10:06,Lewin Chan
+Technical task,Normal,INTERLOK-3597,Merge develop-java11 into develop and change all the Jenkins jobs,Closed,09/02/2021 07:00,10/02/2021 02:33,Paul Higginson
+Bug,Normal,INTERLOK-3598,java.util.logging LogManager complains on startup,Open,09/02/2021 08:43,09/02/2021 08:43,Lewin Chan
+Story,Normal,INTERLOK-3599,interlok-licensing: Add support for environment variables,Open,09/02/2021 10:43,09/02/2021 11:22,Matthew Warman
+Story,Normal,INTERLOK-3600,Java 11 - Test behaviour of Interlok components using Java 11,Open,10/02/2021 07:16,17/02/2021 09:32,Paul Higginson
+Technical task,Normal,INTERLOK-3601,Test interlok-activemq features using Java 11,Open,10/02/2021 07:21,10/02/2021 08:25,Paul Higginson
+Technical task,Normal,INTERLOK-3602,Test interlok-amqp features using Java 11,Open,10/02/2021 07:25,10/02/2021 08:27,Paul Higginson
+Technical task,Normal,INTERLOK-3603,Test interlok-artemis  features using Java 11,Open,10/02/2021 07:25,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3604,Test interlok-apache-http features using Java 11,Open,10/02/2021 07:25,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3605,Test interlok-aws-kinesis features using Java 11,Open,10/02/2021 07:25,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3606,Test interlok-aws-kms features using Java 11,Open,10/02/2021 07:27,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3607,Test interlok-aws-s3 features using Java 11,Open,10/02/2021 07:27,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3608,Test interlok-aws-sns features using Java 11,Open,10/02/2021 07:27,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3609,Test interlok-aws-sqs features using Java 11,Open,10/02/2021 07:28,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3610,Test interlok-azure-cosmosdb features using Java 11,Open,10/02/2021 07:28,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3611,Test interlok-azure-mail features using Java 11,Open,10/02/2021 07:29,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3612,Test interlok-azure-onedrive features using Java 11,Open,10/02/2021 07:29,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3613,Test interlok-ehcache features using Java 11,Open,10/02/2021 07:29,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3614,Test interlok-apache-geode features using Java 11,Open,10/02/2021 07:30,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3615,Test interlok-jsr107-cache features using Java 11,Open,10/02/2021 07:30,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3616,Test interlok-azure-datalake features using Java 11,Open,10/02/2021 07:37,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3617,Create temporary interlok-jslt + implementation,In Progress,10/02/2021 07:40,15/02/2021 07:30,Lewin Chan
+Technical task,Normal,INTERLOK-3618,Create interlok-jslt sub-module of interlok-json,Open,10/02/2021 07:40,10/02/2021 07:42,Lewin Chan
+Technical task,Normal,INTERLOK-3619,Test interlok-elastic-common/interlok-elastic-rest features using Java 11,Open,10/02/2021 07:42,16/02/2021 10:27,Paul Higginson
+Technical task,Normal,INTERLOK-3620,Test interlok-cassandra features using Java 11,Open,10/02/2021 07:42,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3621,Test interlok-cluster-manager features using Java 11,Open,10/02/2021 07:42,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3622,Test interlok-csv features using Java 11,In Progress,10/02/2021 07:43,17/02/2021 09:41,Paul Higginson
+Technical task,Normal,INTERLOK-3623,Test interlok-csv-json features using Java 11,Open,10/02/2021 07:43,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3624,Test interlok-filesystem features using Java 11,Open,10/02/2021 07:43,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3625,Test interlok-gcloud-pubsub features using Java 11,Open,10/02/2021 07:43,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3626,Test interlok-excel features using Java 11,In Progress,10/02/2021 07:43,17/02/2021 11:05,Paul Higginson
+Technical task,Normal,INTERLOK-3627,Test interlok-exec features using Java 11,Open,10/02/2021 07:43,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3628,Test interlok-expressions features using Java 11,Resolved,10/02/2021 07:43,17/02/2021 09:29,Paul Higginson
+Technical task,Normal,INTERLOK-3629,Test interlok-flatfile features using Java 11,Open,10/02/2021 07:43,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3630,Test interlok-hpcc features using Java 11,Open,10/02/2021 07:43,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3631,Test interlok-flyway features using Java 11,Open,10/02/2021 07:44,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3632,Test interlok-jmx-activemq features using Java 11,Open,10/02/2021 07:44,10/02/2021 08:25,Paul Higginson
+Technical task,Normal,INTERLOK-3633,Test interlok-jmx-amqp features using Java 11,Open,10/02/2021 07:44,10/02/2021 08:27,Paul Higginson
+Technical task,Normal,INTERLOK-3634,Test interlok-jmx-jms-stubs features using Java 11,Closed,10/02/2021 07:44,16/02/2021 04:01,Paul Higginson
+Technical task,Normal,INTERLOK-3635,Test interlok-jmx-solace features using Java 11,Open,10/02/2021 07:44,10/02/2021 08:28,Paul Higginson
+Technical task,Normal,INTERLOK-3636,Test interlok-jmx-rabbitmq features using Java 11,Open,10/02/2021 07:44,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3637,Test interlok-jclouds-blobstore features using Java 11,Open,10/02/2021 07:47,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3638,Test interlok-jclouds-aws-sts features using Java 11,Open,10/02/2021 07:47,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3639,Test interlok-json features using Java 11,Open,10/02/2021 07:48,17/02/2021 05:52,Paul Higginson
+Technical task,Normal,INTERLOK-3640,Test interlok-json-streaming features using Java 11,Open,10/02/2021 07:48,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3641,Test interlok-json-web-token features using Java 11,Open,10/02/2021 07:48,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3642,Test interlok-jq features using Java 11,Open,10/02/2021 07:48,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3643,Test interlok-kie features using Java 11,Open,10/02/2021 07:49,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3644,Test interlok-kafka features using Java 11,Open,10/02/2021 07:50,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3645,Test interlok-jruby features using Java 11,Open,10/02/2021 07:50,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3646,Test interlok-mongodb features using Java 11,Open,10/02/2021 07:50,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3647,Test interlok-mqtt features using Java 11,In Progress,10/02/2021 07:50,17/02/2021 05:49,Paul Higginson
+Technical task,Normal,INTERLOK-3648,Test interlok-kubernetes-prometheus features using Java 11,Open,10/02/2021 07:50,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3649,Test interlok-kubernetes-metrics features using Java 11,Open,10/02/2021 07:50,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3650,Test interlok-mail features using Java 11,Open,10/02/2021 07:51,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3651,Test interlok-nats features using Java 11,Open,10/02/2021 07:51,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3652,Test interlok-oauth-azure features using Java 11,Open,10/02/2021 07:51,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3653,Test interlok-oauth-generic features using Java 11,Open,10/02/2021 07:51,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3654,Test interlok-oauth-gcloud features using Java 11,Open,10/02/2021 07:51,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3655,Test interlok-oauth-salesforce features using Java 11,Open,10/02/2021 07:52,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3656,Test interlok-pgp features using Java 11,Open,10/02/2021 07:53,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3657,Test interlok-pdf features using Java 11,Open,10/02/2021 07:53,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3658,Test interlok-okhttp features using Java 11,Open,10/02/2021 07:54,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3659,Test interlok-socket features using Java 11,Open,10/02/2021 07:54,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3660,Test interlok-webservice-cxf features using Java 11,Open,10/02/2021 07:54,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3661,Test interlok-vcs-git features using Java 11,Open,10/02/2021 07:54,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3662,Test interlok-vertx features using Java 11,Open,10/02/2021 07:54,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3663,Test interlok-sshtunnel features using Java 11,Open,10/02/2021 07:54,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3664,Test interlok-stax features using Java 11,Open,10/02/2021 07:55,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3665,Test interlok-swift features using Java 11,Open,10/02/2021 07:55,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3666,Test interlok-varsub features using Java 11,Open,10/02/2021 07:55,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3667,Test interlok-xinclude features using Java 11,Open,10/02/2021 07:55,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3668,Test interlok-rest-cluster features using Java 11,Open,10/02/2021 07:56,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3669,Test interlok-rest-health-check features using Java 11,Open,10/02/2021 07:56,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3670,Test interlok-rest-prometheus features using Java 11,Open,10/02/2021 07:56,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3671,"Test interlok-service-tester (inc. submodules gradle, json, wiremock & xml) features using Java 11",Open,10/02/2021 07:59,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3672,Test interlok-monitor-agent / interlok-profiler features using Java 11,Open,10/02/2021 08:00,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3673,Test interlok-profiler-prometheus features using Java 11,Open,10/02/2021 08:00,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3674,Test interlok/proagrica-nic features using Java 11,Open,10/02/2021 08:02,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3675,"Test interlok-core (boot, common, logging etc) features using Java 11",Open,10/02/2021 08:02,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3676,Test adaptris-saxon-extensions features using Java 11,Open,10/02/2021 08:06,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3677,Test interlok-as400 features using Java 11,Open,10/02/2021 08:06,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3678,Test interlok-edi-legacy features using Java 11,Open,10/02/2021 08:06,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3679,Test interlok-edi-stream features using Java 11,Open,10/02/2021 08:06,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3680,Test interlok-failover features using Java 11,Open,10/02/2021 08:07,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3681,Test interlok-jmx-sonicmq features using Java 11,Open,10/02/2021 08:07,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3682,Test interlok-jms-sonicmq features using Java 11,Open,10/02/2021 08:07,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3683,Test interlok-jms-oracleaq features using Java 11,Open,10/02/2021 08:08,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3684,Test interlok-licensing (inc. demo and stub submodules) features using Java 11,Open,10/02/2021 08:08,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3685,Test interlok-msmq-javonet features using Java 11,Open,10/02/2021 08:08,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3686,Test interlok-new-relic features using Java 11,Open,10/02/2021 08:08,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3687,Test interlok-sap features using Java 11,Open,10/02/2021 08:08,16/02/2021 03:59,Paul Higginson
+Technical task,Normal,INTERLOK-3688,Test interlok-vcs-subversion features using Java 11,Open,10/02/2021 08:09,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3689,Test interlok-webspheremq features using Java 11,Open,10/02/2021 08:09,10/02/2021 08:31,Paul Higginson
+Technical task,Normal,INTERLOK-3690,Test interlok-triggered features using Java 11,Open,10/02/2021 08:09,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3691,Test interlok-solace features using Java 11,Open,10/02/2021 08:09,10/02/2021 08:28,Paul Higginson
+Technical task,Normal,INTERLOK-3692,Test interlok-tibco features using Java 11,Open,10/02/2021 08:09,10/02/2021 08:29,Paul Higginson
+Technical task,Normal,INTERLOK-3693,Test interlok-swiftmq features using Java 11,Open,10/02/2021 08:09,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3694,Test interlok-variodoc features using Java 11,Closed,10/02/2021 08:09,16/02/2021 04:29,Paul Higginson
+Technical task,Normal,INTERLOK-3695,Test interlok-xml-security features using Java 11,Open,10/02/2021 08:09,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3696,Test interlok-xa-activemq features using Java 11,Open,10/02/2021 08:09,10/02/2021 08:25,Paul Higginson
+Technical task,Normal,INTERLOK-3697,Test interlok-xa-atomikos features using Java 11,Open,10/02/2021 08:10,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3698,Test interlok-xa-jms features using Java 11,Open,10/02/2021 08:10,10/02/2021 08:20,Paul Higginson
+Technical task,Normal,INTERLOK-3699,Test interlok-xa-solace features using Java 11,Open,10/02/2021 08:10,10/02/2021 08:28,Paul Higginson
+Technical task,Normal,INTERLOK-3700,Test interlok-xa-tibco features using Java 11,Open,10/02/2021 08:10,10/02/2021 08:29,Paul Higginson
+Technical task,Normal,INTERLOK-3701,Test interlok-xa-wmq features using Java 11,Open,10/02/2021 08:10,10/02/2021 08:31,Paul Higginson
+Bug,Normal,INTERLOK-3702,interlok retry-via-jetty setting reporting-endpoint does not work,Closed,10/02/2021 08:12,11/02/2021 06:29,Matthew Warman
+Technical task,Normal,INTERLOK-3703,Test interlok-jolokia features using Java 11,Open,10/02/2021 08:14,10/02/2021 08:20,Paul Higginson
+Story,Normal,INTERLOK-3704,"UI - Dependency vulnerabilities in shiro, httpclient and guava",Closed,10/02/2021 11:34,14/02/2021 06:05,Matthew Warman
+Story,Normal,INTERLOK-3705,Add Jetty Configurable Key Security Handler,Open,15/02/2021 05:48,15/02/2021 05:48,Matthew Warman
+Bug,Normal,INTERLOK-3706,interlok projects no longer open in eclipse,In Progress,15/02/2021 06:19,15/02/2021 08:27,Lewin Chan
+Story,Low,INTERLOK-3707,UI - create missing optional component icons,Closed,15/02/2021 09:41,15/02/2021 09:42,Paul Higginson
+Story,Normal,INTERLOK-3708,Rename interlok-fx-installer to interlok-installer,Closed,16/02/2021 04:25,16/02/2021 07:28,Sebastien Belin
+Improvement,Low,INTERLOK-3709,Remove variodoc from the Interlok 4 release process,Open,16/02/2021 04:28,16/02/2021 04:28,Paul Higginson
+Story,Normal,INTERLOK-3710,UI - Support Jolokia http request in the UI,Open,16/02/2021 04:29,16/02/2021 04:29,Sebastien Belin
+Story,Normal,INTERLOK-3711,Update retry-store-write-message to store stack trace,Open,16/02/2021 11:27,16/02/2021 11:45,Matthew Warman
+Bug,Normal,INTERLOK-3712,UI Service Tester - unable to edit 'Test Adapter Type' in ui as Helpers is required field (but empty),Closed,17/02/2021 06:01,18/02/2021 04:05,Paul Higginson

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csv-xml>
+   <record>
+      <Issue_Type>Story</Issue_Type>
+      <Priority>Low</Priority>
+      <Issue_key>INTERLOK-3120</Issue_key>
+      <Summary>UI Optional Component - Host the icons in a remote location (nexus, git?)</Summary>
+      <Status>Open</Status>
+      <Created>05/01/2020 07:03</Created>
+      <Updated>10/02/2021 02:52</Updated>
+      <Creator>Sebastien Belin</Creator>
+   </record>
+   <record>
+      <Issue_Type>Story</Issue_Type>
+      <Priority>Normal</Priority>
+      <Issue_key>INTERLOK-3121</Issue_key>
+      <Summary>UI Config - Support README.md file in the config page</Summary>
+      <Status>Closed</Status>
+      <Created>05/01/2020 08:48</Created>
+      <Updated>06/08/2020 04:54</Updated>
+      <Creator>Paul Higginson</Creator>
+   </record>
+   <record>
+      <Issue_Type>Story</Issue_Type>
+      <Priority>Normal</Priority>
+      <Issue_key>INTERLOK-3123</Issue_key>
+      <Summary>Bump google-cloud-pubsub from 1.98.0 to 1.102.0</Summary>
+      <Status>Closed</Status>
+      <Created>06/01/2020 08:28</Created>
+      <Updated>09/06/2020 08:10</Updated>
+      <Creator>Lewin Chan</Creator>
+   </record>
+</csv-xml>

@@ -1,0 +1,188 @@
+<service-test>
+  <unique-id>csv-testing</unique-id>
+  <test-client class="embedded-jmx-test-client"/>
+  <helpers/>
+  <test-list>
+    <unique-id>csv-api</unique-id>
+    <test>
+      <unique-id>csv-to-xml@csv-to-xml-api</unique-id>
+      <test-case>
+        <unique-id>test-xml-to-json</unique-id>
+        <input-message-provider>
+          <metadata-provider class="empty-metadata-provider"/>
+          <payload-provider class="file-payload-provider">
+            <file>file:///${service.tester.working.directory}/src/test/resources/example-3-lines.csv</file>
+          </payload-provider>
+        </input-message-provider>
+        <assertions>
+          <assert-payload-equals-file>
+            <file>file:///${service.tester.working.directory}/src/test/resources/example-3-lines.xml</file>
+          </assert-payload-equals-file>
+        </assertions>
+      </test-case>
+      <service-to-test>
+        <source class="file-source">
+          <file>file:///${service.tester.working.directory}/src/main/interlok/config/adapter.xml</file>
+        </source>
+        <preprocessors>
+          <service-unique-id-preprocessor>
+            <channel>csv-api</channel>
+            <workflow>csv-to-xml-api</workflow>
+            <service>csv-to-xml</service>
+          </service-unique-id-preprocessor>
+        </preprocessors>
+      </service-to-test>
+    </test>
+    <test>
+      <unique-id>stream-csv-to-xml@streaming-csv-to-xml-api</unique-id>
+      <test-case>
+        <unique-id>test-streaming-csv-to-xml</unique-id>
+        <input-message-provider>
+          <metadata-provider class="empty-metadata-provider"/>
+          <payload-provider class="file-payload-provider">
+            <file>file:///${service.tester.working.directory}/src/test/resources/example-586-lines.csv</file>
+          </payload-provider>
+        </input-message-provider>
+        <assertions>
+          <assert-payload-equals-file>
+            <file>file:///${service.tester.working.directory}/src/test/resources/example-586-lines.xml</file>
+          </assert-payload-equals-file>
+        </assertions>
+      </test-case>
+      <service-to-test>
+        <source class="file-source">
+          <file>file:///${service.tester.working.directory}/src/main/interlok/config/adapter.xml</file>
+        </source>
+        <preprocessors>
+          <service-unique-id-preprocessor>
+            <channel>csv-api</channel>
+            <workflow>streaming-csv-to-xml-api</workflow>
+            <service>stream-csv-to-xml</service>
+          </service-unique-id-preprocessor>
+        </preprocessors>
+      </service-to-test>
+    </test>
+    <test>
+      <unique-id>stream-csv-to-xml@unchecked-csv-to-xml-api</unique-id>
+      <test-case>
+        <unique-id>test-unchecked-csv-to-xml</unique-id>
+        <input-message-provider>
+          <metadata-provider class="empty-metadata-provider"/>
+          <payload-provider class="file-payload-provider">
+            <file>file:///${service.tester.working.directory}/src/test/resources/unchecked-example.csv</file>
+          </payload-provider>
+        </input-message-provider>
+        <assertions>
+          <assert-payload-equals-file>
+            <file>file:///${service.tester.working.directory}/src/test/resources/unchecked-example.xml</file>
+          </assert-payload-equals-file>
+        </assertions>
+      </test-case>
+      <service-to-test>
+        <source class="file-source">
+          <file>file:///${service.tester.working.directory}/src/main/interlok/config/adapter.xml</file>
+        </source>
+        <preprocessors>
+          <service-unique-id-preprocessor>
+            <channel>csv-api</channel>
+            <workflow>unchecked-csv-to-xml-api</workflow>
+            <service>stream-csv-to-xml</service>
+          </service-unique-id-preprocessor>
+        </preprocessors>
+      </service-to-test>
+    </test>
+  </test-list>
+  <test-list>
+    <unique-id>csv-to-json-api</unique-id>
+    <test>
+      <unique-id>csv-to-json-array@csv-to-json-array</unique-id>
+      <test-case>
+        <unique-id>test-csv-to-json-array</unique-id>
+        <input-message-provider>
+          <metadata-provider class="empty-metadata-provider"/>
+          <payload-provider class="file-payload-provider">
+            <file>file:///${service.tester.working.directory}/src/test/resources/example-3-lines.csv</file>
+          </payload-provider>
+        </input-message-provider>
+        <assertions>
+          <assert-payload-equals-file>
+            <file>file:///${service.tester.working.directory}/src/test/resources/example-3-lines.json</file>
+          </assert-payload-equals-file>
+        </assertions>
+      </test-case>
+      <service-to-test>
+        <source class="file-source">
+          <file>file:///${service.tester.working.directory}/src/main/interlok/config/adapter.xml</file>
+        </source>
+        <preprocessors>
+          <service-unique-id-preprocessor>
+            <channel>csv-to-json-api</channel>
+            <workflow>csv-to-json-array</workflow>
+            <service>csv-to-json-array</service>
+          </service-unique-id-preprocessor>
+        </preprocessors>
+      </service-to-test>
+    </test>
+    <test>
+      <unique-id>csv-to-json-lines@csv-to-json-lines</unique-id>
+      <test-case>
+        <unique-id>test-csv-to-json-lines</unique-id>
+        <input-message-provider>
+          <metadata-provider class="empty-metadata-provider"/>
+          <payload-provider class="file-payload-provider">
+            <file>file:///${service.tester.working.directory}/src/test/resources/example-3-lines.csv</file>
+          </payload-provider>
+        </input-message-provider>
+        <assertions>
+          <assert-payload-equals-file>
+            <file>file:///${service.tester.working.directory}/src/test/resources/example-3-lines2.json</file>
+          </assert-payload-equals-file>
+        </assertions>
+      </test-case>
+      <service-to-test>
+        <source class="file-source">
+          <file>file:///${service.tester.working.directory}/src/main/interlok/config/adapter.xml</file>
+        </source>
+        <preprocessors>
+          <service-unique-id-preprocessor>
+            <channel>csv-to-json-api</channel>
+            <workflow>csv-to-json-lines</workflow>
+            <service>csv-to-json-lines</service>
+          </service-unique-id-preprocessor>
+        </preprocessors>
+      </service-to-test>
+    </test>
+  </test-list>
+  <test-list>
+    <unique-id>json-to-csv-api</unique-id>
+    <test>
+      <unique-id>json-to-csv-array@csv-to-json-array</unique-id>
+      <test-case>
+        <unique-id>test-csv-to-json-array</unique-id>
+        <input-message-provider>
+          <metadata-provider class="empty-metadata-provider"/>
+          <payload-provider class="file-payload-provider">
+            <file>file:///${service.tester.working.directory}/src/test/resources/example-3-lines.json</file>
+          </payload-provider>
+        </input-message-provider>
+        <assertions>
+          <assert-payload-equals-file>
+            <file>file:///${service.tester.working.directory}/src/test/resources/example-3-lines.csv</file>
+          </assert-payload-equals-file>
+        </assertions>
+      </test-case>
+      <service-to-test>
+        <source class="file-source">
+          <file>file:///${service.tester.working.directory}/src/main/interlok/config/adapter.xml</file>
+        </source>
+        <preprocessors>
+          <service-unique-id-preprocessor>
+            <channel>json-to-csv-api</channel>
+            <workflow>csv-to-json-array</workflow>
+            <service>json-to-csv-array</service>
+          </service-unique-id-preprocessor>
+        </preprocessors>
+      </service-to-test>
+    </test>
+  </test-list>
+</service-test>

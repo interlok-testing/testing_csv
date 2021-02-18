@@ -30,7 +30,247 @@
   </failed-message-retrier>
   <channel-list>
     <channel>
-      <unique-id>csv-processing</unique-id>
+      <consume-connection class="shared-connection">
+        <lookup-name>jetty-conn</lookup-name>
+      </consume-connection>
+      <produce-connection class="null-connection">
+        <unique-id>null-conn</unique-id>
+      </produce-connection>
+      <workflow-list>
+        <standard-workflow>
+          <consumer class="jetty-message-consumer">
+            <unique-id>csv-to-xml</unique-id>
+            <additional-debug>true</additional-debug>
+            <path>/csv-to/xml</path>
+            <methods>POST</methods>
+            <parameter-handler class="jetty-http-ignore-parameters"/>
+            <header-handler class="jetty-http-ignore-headers"/>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>jovial-meninsky</unique-id>
+            <services>
+              <csv-to-xml-transform>
+                <unique-id>csv-to-xml</unique-id>
+                <preference-builder class="csv-basic-preference-builder">
+                  <style>STANDARD_PREFERENCE</style>
+                </preference-builder>
+                <element-names-from-first-record>true</element-names-from-first-record>
+              </csv-to-xml-transform>
+            </services>
+          </service-collection>
+          <producer class="jetty-standard-response-producer">
+            <unique-id>return-result</unique-id>
+            <status-provider class="http-configured-status">
+              <status>OK_200</status>
+            </status-provider>
+            <response-header-provider class="jetty-no-response-headers"/>
+            <content-type-provider class="http-configured-content-type-provider">
+              <mime-type>text/xml</mime-type>
+            </content-type-provider>
+            <send-payload>true</send-payload>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>csv-to-xml-api</unique-id>
+        </standard-workflow>
+        <standard-workflow>
+          <consumer class="jetty-message-consumer">
+            <unique-id>streaming-csv-to-xml</unique-id>
+            <additional-debug>true</additional-debug>
+            <path>/streaming-csv-to/xml</path>
+            <methods>POST</methods>
+            <parameter-handler class="jetty-http-ignore-parameters"/>
+            <header-handler class="jetty-http-ignore-headers"/>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>jovial-meninsky</unique-id>
+            <services>
+              <streaming-csv-to-xml-transform>
+                <unique-id>stream-csv-to-xml</unique-id>
+                <preference-builder class="csv-basic-preference-builder">
+                  <style>STANDARD_PREFERENCE</style>
+                </preference-builder>
+                <stream-writer class="stax-default-stream-writer"/>
+              </streaming-csv-to-xml-transform>
+            </services>
+          </service-collection>
+          <producer class="jetty-standard-response-producer">
+            <unique-id>return-result</unique-id>
+            <status-provider class="http-configured-status">
+              <status>OK_200</status>
+            </status-provider>
+            <response-header-provider class="jetty-no-response-headers"/>
+            <content-type-provider class="http-configured-content-type-provider">
+              <mime-type>text/xml</mime-type>
+            </content-type-provider>
+            <send-payload>true</send-payload>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>streaming-csv-to-xml-api</unique-id>
+        </standard-workflow>
+        <standard-workflow>
+          <consumer class="jetty-message-consumer">
+            <unique-id>unchecked-csv-to-xml</unique-id>
+            <additional-debug>true</additional-debug>
+            <path>/unchecked-csv-to/xml</path>
+            <methods>POST</methods>
+            <parameter-handler class="jetty-http-ignore-parameters"/>
+            <header-handler class="jetty-http-ignore-headers"/>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>jovial-meninsky</unique-id>
+            <services>
+              <unchecked-csv-to-xml-transform>
+                <unique-id>stream-csv-to-xml</unique-id>
+                <preference-builder class="csv-basic-preference-builder">
+                  <style>STANDARD_PREFERENCE</style>
+                </preference-builder>
+                <strip-illegal-xml-chars>true</strip-illegal-xml-chars>
+              </unchecked-csv-to-xml-transform>
+            </services>
+          </service-collection>
+          <producer class="jetty-standard-response-producer">
+            <unique-id>return-result</unique-id>
+            <status-provider class="http-configured-status">
+              <status>OK_200</status>
+            </status-provider>
+            <response-header-provider class="jetty-no-response-headers"/>
+            <content-type-provider class="http-configured-content-type-provider">
+              <mime-type>text/xml</mime-type>
+            </content-type-provider>
+            <send-payload>true</send-payload>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>unchecked-csv-to-xml-api</unique-id>
+        </standard-workflow>
+      </workflow-list>
+      <unique-id>csv-api</unique-id>
+    </channel>
+    <channel>
+      <consume-connection class="shared-connection">
+        <lookup-name>jetty-conn</lookup-name>
+      </consume-connection>
+      <produce-connection class="null-connection">
+        <unique-id>null-conn</unique-id>
+      </produce-connection>
+      <workflow-list>
+        <standard-workflow>
+          <consumer class="jetty-message-consumer">
+            <unique-id>csv-to-json-array</unique-id>
+            <additional-debug>true</additional-debug>
+            <path>/csv-to/json/array</path>
+            <methods>POST</methods>
+            <parameter-handler class="jetty-http-ignore-parameters"/>
+            <header-handler class="jetty-http-ignore-headers"/>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>jovial-meninsky</unique-id>
+            <services>
+              <csv-to-json>
+                <unique-id>csv-to-json-array</unique-id>
+                <preference-builder class="csv-basic-preference-builder">
+                  <style>STANDARD_PREFERENCE</style>
+                </preference-builder>
+                <style>JSON_ARRAY</style>
+              </csv-to-json>
+            </services>
+          </service-collection>
+          <producer class="jetty-standard-response-producer">
+            <unique-id>return-result</unique-id>
+            <status-provider class="http-configured-status">
+              <status>OK_200</status>
+            </status-provider>
+            <response-header-provider class="jetty-no-response-headers"/>
+            <content-type-provider class="http-configured-content-type-provider">
+              <mime-type>text/xml</mime-type>
+            </content-type-provider>
+            <send-payload>true</send-payload>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>csv-to-json-array</unique-id>
+        </standard-workflow>
+        <standard-workflow>
+          <consumer class="jetty-message-consumer">
+            <unique-id>csv-to-json-lines</unique-id>
+            <additional-debug>true</additional-debug>
+            <path>/csv-to/json/lines</path>
+            <methods>POST</methods>
+            <parameter-handler class="jetty-http-ignore-parameters"/>
+            <header-handler class="jetty-http-ignore-headers"/>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>jovial-meninsky</unique-id>
+            <services>
+              <csv-to-json>
+                <unique-id>csv-to-json-lines</unique-id>
+                <preference-builder class="csv-basic-preference-builder">
+                  <style>STANDARD_PREFERENCE</style>
+                </preference-builder>
+                <style>JSON_LINES</style>
+              </csv-to-json>
+            </services>
+          </service-collection>
+          <producer class="jetty-standard-response-producer">
+            <unique-id>return-result</unique-id>
+            <status-provider class="http-configured-status">
+              <status>OK_200</status>
+            </status-provider>
+            <response-header-provider class="jetty-no-response-headers"/>
+            <content-type-provider class="http-configured-content-type-provider">
+              <mime-type>text/xml</mime-type>
+            </content-type-provider>
+            <send-payload>true</send-payload>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>csv-to-json-lines</unique-id>
+        </standard-workflow>
+      </workflow-list>
+      <unique-id>csv-to-json-api</unique-id>
+    </channel>
+    <channel>
+      <consume-connection class="shared-connection">
+        <lookup-name>jetty-conn</lookup-name>
+      </consume-connection>
+      <produce-connection class="null-connection">
+        <unique-id>null-conn</unique-id>
+      </produce-connection>
+      <workflow-list>
+        <standard-workflow>
+          <consumer class="jetty-message-consumer">
+            <unique-id>json-to-csv</unique-id>
+            <additional-debug>true</additional-debug>
+            <path>/json-to/csv</path>
+            <methods>POST</methods>
+            <parameter-handler class="jetty-http-ignore-parameters"/>
+            <header-handler class="jetty-http-ignore-headers"/>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>jovial-meninsky</unique-id>
+            <services>
+              <json-to-csv>
+                <unique-id>json-to-csv-array</unique-id>
+                <preference-builder class="csv-basic-preference-builder">
+                  <style>STANDARD_PREFERENCE</style>
+                </preference-builder>
+                <json-style>JSON_ARRAY</json-style>
+              </json-to-csv>
+            </services>
+          </service-collection>
+          <producer class="jetty-standard-response-producer">
+            <unique-id>return-result</unique-id>
+            <status-provider class="http-configured-status">
+              <status>OK_200</status>
+            </status-provider>
+            <response-header-provider class="jetty-no-response-headers"/>
+            <content-type-provider class="http-configured-content-type-provider">
+              <mime-type>text/xml</mime-type>
+            </content-type-provider>
+            <send-payload>true</send-payload>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>csv-to-json-array</unique-id>
+        </standard-workflow>
+      </workflow-list>
+      <unique-id>json-to-csv-api</unique-id>
     </channel>
   </channel-list>
   <message-error-digester class="standard-message-error-digester">

@@ -1,0 +1,4 @@
+Story,Normal,INTERLOK-3129,Document the new multi-payload services,Closed,07/01/2020 06:08,12/02/2020 02:53,Aaron McGrath
+Normal,INTERLOK-3131,Service Tester - AssertionResult has a uniqueId member which is never used,Closed
+Bug,Normal,INTERLOK-3132,ClassCastException with profiler when using custom services,Closed,13/01/2020 03:46,18/02/2020 06:44,Baldev Klair
+Bug,INTERLOK-3133,Artifact Downloader - Cross-site Scripting (XSS),Closed,Sebastien Belin
