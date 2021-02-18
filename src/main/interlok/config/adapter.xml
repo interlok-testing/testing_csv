@@ -267,7 +267,43 @@
             <send-payload>true</send-payload>
           </producer>
           <produce-exception-handler class="null-produce-exception-handler"/>
-          <unique-id>csv-to-json-array</unique-id>
+          <unique-id>json-to-csv</unique-id>
+        </standard-workflow>
+        <standard-workflow>
+          <consumer class="jetty-message-consumer">
+            <unique-id>json-to-fixed-csv</unique-id>
+            <additional-debug>true</additional-debug>
+            <path>/json-to-fixed/csv</path>
+            <methods>POST</methods>
+            <parameter-handler class="jetty-http-parameters-as-metadata"/>
+            <header-handler class="jetty-http-ignore-headers"/>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>jovial-meninsky</unique-id>
+            <services>
+              <json-to-fixed-csv-service>
+                <unique-id>json-to-fixed-csv</unique-id>
+                <preference-builder class="csv-basic-preference-builder">
+                  <style>STANDARD_PREFERENCE</style>
+                </preference-builder>
+                <json-style>JSON_ARRAY</json-style>
+                <csv-header>%message{header}</csv-header>
+              </json-to-fixed-csv-service>
+            </services>
+          </service-collection>
+          <producer class="jetty-standard-response-producer">
+            <unique-id>return-result</unique-id>
+            <status-provider class="http-configured-status">
+              <status>OK_200</status>
+            </status-provider>
+            <response-header-provider class="jetty-no-response-headers"/>
+            <content-type-provider class="http-configured-content-type-provider">
+              <mime-type>text/xml</mime-type>
+            </content-type-provider>
+            <send-payload>true</send-payload>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>json-to-fixed-csv</unique-id>
         </standard-workflow>
       </workflow-list>
       <unique-id>json-to-csv-api</unique-id>

@@ -276,3 +276,50 @@ Story,Low,INTERLOK-3120,"UI Optional Component - Host the icons in a remote loca
 Story,Normal,INTERLOK-3121,UI Config - Support README.md file in the config page,Closed,05/01/2020 08:48,06/08/2020 04:54,Paul Higginson
 Story,Normal,INTERLOK-3123,Bump google-cloud-pubsub from 1.98.0 to 1.102.0,Closed,06/01/2020 08:28,09/06/2020 08:10,Lewin Chan
 ```
+
+### JSON to CSV using com.adaptris.core.transform.csvjson.JsonToFixedCSV
+This api call only returns csv fields that have been specified (in the header parameter)
+
+```
+curl -s -XPOST --data-binary "@src/test/resources/example-3-records.json" "http://localhost:8081/json-to-fixed/csv?header=Priority,Issue+key,Status"
+```
+
+request body:
+```json
+[ {
+  "Issue Type" : "Story",
+  "Priority" : "Low",
+  "Issue key" : "INTERLOK-3120",
+  "Summary" : "UI Optional Component - Host the icons in a remote location (nexus, git?)",
+  "Status" : "Open",
+  "Created" : "05/01/2020 07:03",
+  "Updated" : "10/02/2021 02:52",
+  "Creator" : "Sebastien Belin"
+}, {
+  "Issue Type" : "Story",
+  "Priority" : "Normal",
+  "Issue key" : "INTERLOK-3121",
+  "Summary" : "UI Config - Support README.md file in the config page",
+  "Status" : "Closed",
+  "Created" : "05/01/2020 08:48",
+  "Updated" : "06/08/2020 04:54",
+  "Creator" : "Paul Higginson"
+}, {
+  "Issue Type" : "Story",
+  "Priority" : "Normal",
+  "Issue key" : "INTERLOK-3123",
+  "Summary" : "Bump google-cloud-pubsub from 1.98.0 to 1.102.0",
+  "Status" : "Closed",
+  "Created" : "06/01/2020 08:28",
+  "Updated" : "09/06/2020 08:10",
+  "Creator" : "Lewin Chan"
+} ]
+```
+
+response: 
+```csv
+Priority,Issue key,Status
+Low,INTERLOK-3120,Open
+Normal,INTERLOK-3121,Closed
+Normal,INTERLOK-3123,Closed
+```

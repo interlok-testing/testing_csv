@@ -1,6 +1,14 @@
 <service-test>
   <unique-id>csv-testing</unique-id>
-  <test-client class="embedded-jmx-test-client"/>
+  <test-client class="embedded-jmx-test-client">
+    <shared-components>
+      <connections/>
+      <services/>
+    </shared-components>
+    <shared-components-provider>
+      <services/>
+    </shared-components-provider>
+  </test-client>
   <helpers/>
   <test-list>
     <unique-id>csv-api</unique-id>
@@ -156,7 +164,7 @@
   <test-list>
     <unique-id>json-to-csv-api</unique-id>
     <test>
-      <unique-id>json-to-csv-array@csv-to-json-array</unique-id>
+      <unique-id>json-to-csv-array@json-to-csv</unique-id>
       <test-case>
         <unique-id>test-csv-to-json-array</unique-id>
         <input-message-provider>
@@ -178,8 +186,44 @@
         <preprocessors>
           <service-unique-id-preprocessor>
             <channel>json-to-csv-api</channel>
-            <workflow>csv-to-json-array</workflow>
+            <workflow>json-to-csv</workflow>
             <service>json-to-csv-array</service>
+          </service-unique-id-preprocessor>
+        </preprocessors>
+      </service-to-test>
+    </test>
+    <test>
+      <unique-id>json-to-csv-array@json-to-fixed-csv</unique-id>
+      <test-case>
+        <unique-id>test-csv-to-json-array</unique-id>
+        <input-message-provider>
+          <metadata-provider class="inline-metadata-provider">
+            <metadata>
+              <key-value-pair>
+                <key>header</key>
+                <value>Priority,Issue key,Status</value>
+              </key-value-pair>
+            </metadata>
+          </metadata-provider>
+          <payload-provider class="file-payload-provider">
+            <file>file:///${service.tester.working.directory}/src/test/resources/example-3-lines.json</file>
+          </payload-provider>
+        </input-message-provider>
+        <assertions>
+          <assert-payload-equals-file>
+            <file>file:///${service.tester.working.directory}/src/test/resources/example-3-lines-fixed.csv</file>
+          </assert-payload-equals-file>
+        </assertions>
+      </test-case>
+      <service-to-test>
+        <source class="file-source">
+          <file>file:///${service.tester.working.directory}/src/main/interlok/config/adapter.xml</file>
+        </source>
+        <preprocessors>
+          <service-unique-id-preprocessor>
+            <channel>json-to-csv-api</channel>
+            <workflow>json-to-fixed-csv</workflow>
+            <service>json-to-fixed-csv</service>
           </service-unique-id-preprocessor>
         </preprocessors>
       </service-to-test>
