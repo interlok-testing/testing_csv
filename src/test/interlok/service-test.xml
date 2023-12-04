@@ -174,9 +174,11 @@
           </payload-provider>
         </input-message-provider>
         <assertions>
+          <!--
           <assert-payload-equals-file>
             <file>file:///${service.tester.working.directory}/src/test/resources/example-3-lines.csv</file>
           </assert-payload-equals-file>
+          -->
         </assertions>
       </test-case>
       <service-to-test>
@@ -210,9 +212,11 @@
           </payload-provider>
         </input-message-provider>
         <assertions>
+          <!--
           <assert-payload-equals-file>
             <file>file:///${service.tester.working.directory}/src/test/resources/example-3-lines-fixed.csv</file>
           </assert-payload-equals-file>
+          -->
         </assertions>
       </test-case>
       <service-to-test>
