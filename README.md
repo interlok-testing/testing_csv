@@ -25,7 +25,7 @@ Now you can do various api calls:
 ### CSV to XML using com.adaptris.csv.transform.CsvToXml
 
 ```
-$ curl -s -XPOST --data-binary "@src/test/resources/example-3-lines.csv" "http://localhost:8081/csv-to/xml"
+$ curl -s -XPOST --data-binary "@src/test/resources/example-3-lines.csv" "http://localhost:8080/csv-to/xml"
 ```
 
 request body:
@@ -77,7 +77,7 @@ response:
 ### CSV to XML using com.adaptris.csv.transform.StreamingCsvToXml
 
 ```
-$ curl -s -XPOST --data-binary "@src/test/resources/example-586-lines.csv" "http://localhost:8081/streaming-csv-to/xml"
+$ curl -s -XPOST --data-binary "@src/test/resources/example-586-lines.csv" "http://localhost:8080/streaming-csv-to/xml"
 ```
 
 request body:
@@ -115,7 +115,7 @@ response:
 ### CSV to XML using com.adaptris.csv.transform.UncheckedCsvToXml
 
 ```
-$ curl -s -XPOST --data-binary "@src/test/resources/unchecked-example.csv" "http://localhost:8081/unchecked-csv-to/xml"
+$ curl -s -XPOST --data-binary "@src/test/resources/unchecked-example.csv" "http://localhost:8080/unchecked-csv-to/xml"
 ```
 
 request body:
@@ -169,7 +169,7 @@ response:
 ### CSV to JSON (Array) using com.adaptris.core.transform.csvjson.CSVToJson (style=JSON_ARRAY)
 
 ```
-$ curl -s -XPOST --data-binary "@src/test/resources/example-3-lines.csv" "http://localhost:8081/csv-to/json/array"
+$ curl -s -XPOST --data-binary "@src/test/resources/example-3-lines.csv" "http://localhost:8080/csv-to/json/array"
 ```
 
 request body:
@@ -216,7 +216,7 @@ response:
 
 
 ```
-curl -s -XPOST --data-binary "@src/test/resources/example-3-lines.csv" "http://localhost:8081/csv-to/json/lines"
+curl -s -XPOST --data-binary "@src/test/resources/example-3-lines.csv" "http://localhost:8080/csv-to/json/lines"
 ```
 
 request body:
@@ -237,7 +237,7 @@ response:
 ### JSON to CSV using com.adaptris.core.transform.csvjson.JsonArrayToCSV
 
 ```
-$ curl -s -XPOST --data-binary "@src/test/resources/example-3-records.json" "http://localhost:8081/json-to/csv"
+$ curl -s -XPOST --data-binary "@src/test/resources/example-3-records.json" "http://localhost:8080/json-to/csv"
 ```
 
 request body:
@@ -286,7 +286,7 @@ Story,Normal,INTERLOK-3123,Bump google-cloud-pubsub from 1.98.0 to 1.102.0,Close
 This api call only returns csv fields that have been specified (in the header parameter)
 
 ```
-curl -s -XPOST --data-binary "@src/test/resources/example-3-records.json" "http://localhost:8081/json-to-fixed/csv?header=Priority,Issue+key,Status"
+curl -s -XPOST --data-binary "@src/test/resources/example-3-records.json" "http://localhost:8080/json-to-fixed/csv?header=Priority,Issue+key,Status"
 ```
 
 request body:
@@ -338,18 +338,18 @@ This api uses a derby database.
 First, we have to initialise the database (create the table we're going to use):
 
 ```
-$ curl -s http://localhost:8081/csv-db-init
+$ curl -s http://localhost:8080/csv-db-init
 Success - Database initialised
 ```
 
 Now we can insert data into it:
 
 ```
-$ curl -s -XPOST --data-binary "@src/test/resources/example-csv-db-records1.csv" "http://localhost:8081/csv-db-insert"
+$ curl -s -XPOST --data-binary "@src/test/resources/example-csv-db-records1.csv" "http://localhost:8080/csv-db-insert"
 ISSUE_TYPE,PRIORITY,ISSUE_KEY,SUMMARY,STATUS,CREATED,UPDATED,CREATOR
 Story,Low,INTERLOK-3120,"UI Optional Component - Host the icons in a remote location (nexus, git?)",Open,2006-09-10-00.00.00,2006-09-10-00.00.00,Seb B
 
-$ curl -s -XPOST --data-binary "@src/test/resources/example-csv-db-records2.csv" "http://localhost:8081/csv-db-insert"
+$ curl -s -XPOST --data-binary "@src/test/resources/example-csv-db-records2.csv" "http://localhost:8080/csv-db-insert"
 ISSUE_TYPE,PRIORITY,ISSUE_KEY,SUMMARY,STATUS,CREATED,UPDATED,CREATOR
 Story,Normal,INTERLOK-3153,Add a CSV Aggregator,Closed,2020-01-23-03.29.00,2020-01-23-04.32.00,Lewin C
 Story,Low,INTERLOK-3161,"UI Config - Enable the variable selector on key/value list inputs, before the add key/value action",Open,2020-01-28-03.56.00,2020-01-28-03.57.00,Paul H
@@ -359,7 +359,7 @@ Story,Normal,INTERLOK-3202,JCSMP - Update to use the new onAdaptrisMessage,Close
 Lets select the data we've inserted into the database:
 
 ```
-$ curl -s http://localhost:8081/csv-db-select
+$ curl -s http://localhost:8080/csv-db-select
 ```
 
 ```xml
@@ -411,7 +411,7 @@ $ curl -s http://localhost:8081/csv-db-select
 Finally, lets drop the table, seeing as this is only a test:
 
 ```
-$ curl -s http://localhost:8081/csv-db-destroy
+$ curl -s http://localhost:8080/csv-db-destroy
 Success - Database destroyed
 ```
 
