@@ -10,7 +10,7 @@ Project tests interlok-csv features
 This project contains various workflows that make up a CSV transform API & a CSV to db API.
 
 Each workflow is made up of:
-* a jetty-message-consumer that consumes parameters from a given uri path
+* a jetty-message-consumer that consumes parameters from a given URI path
 * a service from the interlok-csv or interlok-csv-json component that will do the transform / database operations
 * a jetty-standard-response-producer that returns the payload result back to the requester
 
