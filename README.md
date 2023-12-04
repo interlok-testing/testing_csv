@@ -1,5 +1,8 @@
 # CSV Testing
 
+[![license](https://img.shields.io/github/license/interlok-testing/testing_csv.svg)](https://github.com/interlok-testing/testing_csv/blob/develop/LICENSE)
+[![Actions Status](https://github.com/interlok-testing/testing_csv/actions/workflows/gradle-build.yml/badge.svg)](https://github.com/interlok-testing/testing_csv/actions/workflows/gradle-build.yml)
+
 Project tests interlok-csv features
 
 ## What it does
