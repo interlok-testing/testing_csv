@@ -22,11 +22,13 @@ dependencies {
   interlokRuntime ("com.adaptris:interlok-csv:$interlokVersion") { changing=true }
   interlokRuntime ("com.adaptris:interlok-csv-json:$interlokVersion") { changing=true }
   interlokRuntime ("com.adaptris:interlok-service-tester:$interlokVersion") { changing=true }
+  interlokRuntime ("com.adaptris:interlok-service-tester-xml:$interlokVersion") { changing=true }
 
   interlokJavadocs group: "com.adaptris", name: "interlok-json", version: "$interlokVersion", classifier: "javadoc", changing: true, transitive: false
   interlokJavadocs group: "com.adaptris", name: "interlok-csv", version: "$interlokVersion", classifier: "javadoc", changing: true, transitive: false
   interlokJavadocs group: "com.adaptris", name: "interlok-csv-json", version: "$interlokVersion", classifier: "javadoc", changing: true, transitive: false
   interlokJavadocs group: "com.adaptris", name: "interlok-service-tester", version: "$interlokVersion", classifier: "javadoc", changing: true, transitive: false
+  interlokJavadocs group: "com.adaptris", name: "interlok-service-tester-xml", version: "$interlokVersion", classifier: "javadoc", changing: true, transitive: false
 
   interlokRuntime ("org.apache.derby:derby:10.15.2.0") { changing=true }
   interlokRuntime ("org.apache.derby:derbyshared:10.15.2.0") { changing=true }

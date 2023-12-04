@@ -6,7 +6,7 @@
   "Status" : "Open",
   "Created" : "05/01/2020 07:03",
   "Updated" : "10/02/2021 02:52",
-  "Creator" : "Sebastien Belin"
+  "Creator" : "Sebastien B"
 }, {
   "Issue Type" : "Story",
   "Priority" : "Normal",
@@ -15,7 +15,7 @@
   "Status" : "Closed",
   "Created" : "05/01/2020 08:48",
   "Updated" : "06/08/2020 04:54",
-  "Creator" : "Paul Higginson"
+  "Creator" : "Paul H"
 }, {
   "Issue Type" : "Story",
   "Priority" : "Normal",
@@ -24,5 +24,5 @@
   "Status" : "Closed",
   "Created" : "06/01/2020 08:28",
   "Updated" : "09/06/2020 08:10",
-  "Creator" : "Lewin Chan"
+  "Creator" : "Lewin C"
 } ]

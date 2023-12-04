@@ -23,9 +23,9 @@
           </payload-provider>
         </input-message-provider>
         <assertions>
-          <assert-payload-equals-file>
+          <assert-xml-payload-equals-file>
             <file>file:///${service.tester.working.directory}/src/test/resources/example-3-lines.xml</file>
-          </assert-payload-equals-file>
+          </assert-xml-payload-equals-file>
         </assertions>
       </test-case>
       <service-to-test>
@@ -52,9 +52,9 @@
           </payload-provider>
         </input-message-provider>
         <assertions>
-          <assert-payload-equals-file>
+          <assert-xml-payload-equals-file>
             <file>file:///${service.tester.working.directory}/src/test/resources/example-586-lines.xml</file>
-          </assert-payload-equals-file>
+          </assert-xml-payload-equals-file>
         </assertions>
       </test-case>
       <service-to-test>
@@ -81,9 +81,9 @@
           </payload-provider>
         </input-message-provider>
         <assertions>
-          <assert-payload-equals-file>
+          <assert-xml-payload-equals-file>
             <file>file:///${service.tester.working.directory}/src/test/resources/unchecked-example.xml</file>
-          </assert-payload-equals-file>
+          </assert-xml-payload-equals-file>
         </assertions>
       </test-case>
       <service-to-test>

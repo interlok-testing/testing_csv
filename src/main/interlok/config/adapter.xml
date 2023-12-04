@@ -74,7 +74,6 @@
             </content-type-provider>
             <send-payload>true</send-payload>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>csv-to-xml-api</unique-id>
         </standard-workflow>
         <standard-workflow>
@@ -109,7 +108,6 @@
             </content-type-provider>
             <send-payload>true</send-payload>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>streaming-csv-to-xml-api</unique-id>
         </standard-workflow>
         <standard-workflow>
@@ -144,7 +142,6 @@
             </content-type-provider>
             <send-payload>true</send-payload>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>unchecked-csv-to-xml-api</unique-id>
         </standard-workflow>
       </workflow-list>
@@ -190,7 +187,6 @@
             </content-type-provider>
             <send-payload>true</send-payload>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>csv-to-json-array</unique-id>
         </standard-workflow>
         <standard-workflow>
@@ -225,7 +221,6 @@
             </content-type-provider>
             <send-payload>true</send-payload>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>csv-to-json-lines</unique-id>
         </standard-workflow>
       </workflow-list>
@@ -271,7 +266,6 @@
             </content-type-provider>
             <send-payload>true</send-payload>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>json-to-csv</unique-id>
         </standard-workflow>
         <standard-workflow>
@@ -307,7 +301,6 @@
             </content-type-provider>
             <send-payload>true</send-payload>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>json-to-fixed-csv</unique-id>
         </standard-workflow>
       </workflow-list>
@@ -369,7 +362,6 @@
             </content-type-provider>
             <send-payload>true</send-payload>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>csv-db-init</unique-id>
         </standard-workflow>
         <standard-workflow>
@@ -407,7 +399,6 @@
             </content-type-provider>
             <send-payload>true</send-payload>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>csv-db-insert</unique-id>
         </standard-workflow>
         <standard-workflow>
@@ -448,7 +439,6 @@
             </content-type-provider>
             <send-payload>true</send-payload>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>csv-db-destroy</unique-id>
         </standard-workflow>
         <standard-workflow>
@@ -489,7 +479,6 @@
             </content-type-provider>
             <send-payload>true</send-payload>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>csv-db-select</unique-id>
         </standard-workflow>
       </workflow-list>

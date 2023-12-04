@@ -8,7 +8,7 @@
       <csv-field-5>Closed</csv-field-5>
       <csv-field-6>07/01/2020 06:08</csv-field-6>
       <csv-field-7>12/02/2020 02:53</csv-field-7>
-      <csv-field-8>Aaron McGrath</csv-field-8>
+      <csv-field-8>Aaron M</csv-field-8>
    </record>
    <record>
       <csv-field-1>Normal</csv-field-1>
@@ -24,13 +24,13 @@
       <csv-field-5>Closed</csv-field-5>
       <csv-field-6>13/01/2020 03:46</csv-field-6>
       <csv-field-7>18/02/2020 06:44</csv-field-7>
-      <csv-field-8>Baldev Klair</csv-field-8>
+      <csv-field-8>Baldev K</csv-field-8>
    </record>
    <record>
       <csv-field-1>Bug</csv-field-1>
       <csv-field-2>INTERLOK-3133</csv-field-2>
       <csv-field-3>Artifact Downloader - Cross-site Scripting (XSS)</csv-field-3>
       <csv-field-4>Closed</csv-field-4>
-      <csv-field-5>Sebastien Belin</csv-field-5>
+      <csv-field-5>Sebastien B</csv-field-5>
    </record>
 </csv-xml>
