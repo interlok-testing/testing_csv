@@ -4,15 +4,13 @@ plugins {
 }
 
 ext {
-  interlokParentGradle = "https://raw.githubusercontent.com/adaptris/interlok-build-parent/main/v5/build.gradle"
-  interlokVersion = '5.0-SNAPSHOT'
-  // Include the WAR file since by default it is excluded.
-  includeWar='true'
-  junitJupiterVersion = '5.11.4'
+  testingCommonGradle = "https://raw.githubusercontent.com/interlok-testing/testing_common/refs/heads/master/common.gradle"
+  //testingCommonGradle = "../interlok-testing-common/common.gradle"
+  interlokTestingVersion = "0.1"
 }
 
 allprojects {
-  apply from: "${interlokParentGradle}"
+  apply from: "${testingCommonGradle}"
   // specify the version of the configuration.
   version=versioning.info.full
 }
@@ -31,23 +29,11 @@ dependencies {
   interlokJavadocs group: "com.adaptris", name: "interlok-service-tester", version: "$interlokVersion", classifier: "javadoc", changing: true, transitive: false
   interlokJavadocs group: "com.adaptris", name: "interlok-service-tester-xml", version: "$interlokVersion", classifier: "javadoc", changing: true, transitive: false
 
+  testImplementation group: "com.adaptris", name: "interlok-testing-common", version: "$interlokTestingVersion"
+
   interlokRuntime ("org.apache.derby:derby:10.15.2.0") { changing=true }
   interlokRuntime ("org.apache.derby:derbyshared:10.15.2.0") { changing=true }
   interlokRuntime ("org.apache.derby:derbytools:10.15.2.0") { changing=true }
-
-  testImplementation ("org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion")
-  testImplementation("org.junit.jupiter:junit-jupiter-params:$junitJupiterVersion")
-  testImplementation 'org.apache.httpcomponents.core5:httpcore5:5.3.3'
-  testImplementation 'org.apache.httpcomponents.client5:httpclient5:5.4.1'
-  testImplementation 'org.apache.httpcomponents.client5:httpclient5-testing:5.4.1'
-  testImplementation fileTree(dir: "$buildDir/distribution/lib", include: ['*.jar'])
 }
 
-def functionalTest = tasks.register('functionalTest', Test) {
-  useJUnitPlatform()
-  interlokServiceTest.enabled = false
-  interlokServiceTestReport.enabled = false
-  dependsOn tasks.named('build')
-  workingDir = file("$buildDir/distribution")
-}
 
