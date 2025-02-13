@@ -1,6 +1,6 @@
 package com.adaptris.csv.test;
 
-import com.adaptris.testing.AbstractAdapterFunctionalTest;
+import com.adaptris.testing.SingleAdapterFunctionalTest;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.hc.client5.http.classic.methods.HttpPost;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpResponse;
@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.io.InputStream;
 import java.util.List;
 
-public class DefaultFunctionalTest extends AbstractAdapterFunctionalTest {
+public class DefaultFunctionalTest extends SingleAdapterFunctionalTest {
     static class TestCaseData {
         String url;
         String input;
