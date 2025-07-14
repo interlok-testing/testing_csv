@@ -6,7 +6,7 @@
     <connections>
       <jetty-http-connection>
         <unique-id>jetty-conn</unique-id>
-        <port>8081</port>
+        <port>${sysprop.jetty.http.port}</port>
         <server-connector-properties/>
         <http-configuration/>
       </jetty-http-connection>
