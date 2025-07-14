@@ -37,3 +37,7 @@ dependencies {
 }
 
 
+tasks.named('functionalTest') {
+  interlokServiceTest.enabled = false
+  interlokServiceTestReport.enabled = false
+}

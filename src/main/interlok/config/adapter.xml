@@ -4,12 +4,9 @@
   <heartbeat-event-imp>com.adaptris.core.HeartbeatEvent</heartbeat-event-imp>
   <shared-components>
     <connections>
-      <jetty-http-connection>
+      <jetty-embedded-connection>
         <unique-id>jetty-conn</unique-id>
-        <port>${sysprop.jetty.http.port}</port>
-        <server-connector-properties/>
-        <http-configuration/>
-      </jetty-http-connection>
+      </jetty-embedded-connection>
       <jdbc-connection>
         <unique-id>derby-db-conn</unique-id>
         <driver-imp>org.apache.derby.jdbc.EmbeddedDriver</driver-imp>
