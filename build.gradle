@@ -6,7 +6,6 @@ plugins {
 ext {
   testingCommonGradle = "https://raw.githubusercontent.com/interlok-testing/testing_common/refs/heads/master/common.gradle?timestamp=${new Date().getTime()}"
   //testingCommonGradle = "../interlok-testing-common/common.gradle"
-  interlokTestingVersion = "0.1"
 }
 
 allprojects {
@@ -20,16 +19,8 @@ dependencies {
   interlokRuntime ("com.adaptris:interlok-json:$interlokVersion") { changing=true }
   interlokRuntime ("com.adaptris:interlok-csv:$interlokVersion") { changing=true }
   interlokRuntime ("com.adaptris:interlok-csv-json:$interlokVersion") { changing=true }
-  interlokRuntime ("com.adaptris:interlok-service-tester:$interlokVersion") { changing=true }
-  interlokRuntime ("com.adaptris:interlok-service-tester-xml:$interlokVersion") { changing=true }
-
-  interlokJavadocs group: "com.adaptris", name: "interlok-json", version: "$interlokVersion", classifier: "javadoc", changing: true, transitive: false
-  interlokJavadocs group: "com.adaptris", name: "interlok-csv", version: "$interlokVersion", classifier: "javadoc", changing: true, transitive: false
-  interlokJavadocs group: "com.adaptris", name: "interlok-csv-json", version: "$interlokVersion", classifier: "javadoc", changing: true, transitive: false
-  interlokJavadocs group: "com.adaptris", name: "interlok-service-tester", version: "$interlokVersion", classifier: "javadoc", changing: true, transitive: false
-  interlokJavadocs group: "com.adaptris", name: "interlok-service-tester-xml", version: "$interlokVersion", classifier: "javadoc", changing: true, transitive: false
-
-  testImplementation group: "com.adaptris", name: "interlok-testing-common", version: "$interlokTestingVersion"
+  interlokRuntime ("com.adaptris:interlok-service-tester:$interlokServiceTesterVersion") { changing=true }
+  interlokRuntime ("com.adaptris:interlok-service-tester-xml:$interlokServiceTesterVersion") { changing=true }
 
   interlokRuntime ("org.apache.derby:derby:10.15.2.0") { changing=true }
   interlokRuntime ("org.apache.derby:derbyshared:10.15.2.0") { changing=true }
